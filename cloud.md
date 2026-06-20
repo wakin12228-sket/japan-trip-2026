@@ -11,8 +11,9 @@
 | **專案名稱** | 2026 家族日本之旅行程網頁 |
 | **一句話目標** | 手機/電腦免登入查看 9 天日本行程，改行程時跟 AI 對話更新資料檔 |
 | **目標使用者** | 家族成員（出遊前後查行程） |
-| **部署網址** | （待部署，預設 GitHub Pages） |
-| **最後更新** | 2026-06-20 |
+| **部署網址** | https://wakin12228-sket.github.io/japan-trip-2026/ |
+| **GitHub** | https://github.com/wakin12228-sket/japan-trip-2026 |
+| **最後更新** | 2026-06-20（收工）
 
 ---
 
@@ -21,7 +22,7 @@
 | 元件 | 本專案路徑 / 連結 |
 |------|-------------------|
 | 一桌（工作目錄） | Google Drive 同步 → 本資料夾 |
-| 第一櫃（GitHub） | （待填寫 repo URL） |
+| 第一櫃（GitHub） | https://github.com/wakin12228-sket/japan-trip-2026 |
 | 第二櫃（Firebase） | v1 不用 Firestore；可選 Firebase Hosting |
 | 第三櫃（Obsidian） | `obsidian/` 資料夾 |
 
@@ -52,7 +53,7 @@
 /meta          title, subtitle, startDate, endDate
 /essentials    hotels[]
 /days[]        day, date, weekday, title, hotel, items[]
-  items[]      time, endTime, title, location, transport, duration, notes, mapQuery, section
+  items[]      time, endTime, title, location, transport, duration, notes, mapQuery, section, image, introUrl
 ```
 
 ---
@@ -62,20 +63,21 @@
 - [x] 專案初始化（一桌三櫃懶人包已建立）
 - [x] 建立 `src/data/itinerary.json`（Day 1–3、Day 5 下午）
 - [x] 實作響應式行程頁 `src/index.html`
-- [ ] GitHub repo 建立並 push
-- [ ] 部署上線（GitHub Pages）
+- [x] GitHub repo 建立並 push
+- [x] 部署上線（GitHub Pages，`/docs` 資料夾）
+- [ ] 視覺升級：柔和風格 + 景點配圖 + 布布/一二角色（使用者準備素材中）
 - [ ] 補齊 Day 4、Day 5 上午、Day 6–9 行程
 
 **上次收工摘要：**
-> 完成 v1 行程網頁：從 Word 匯入 Day 1–3 與 Day 5 下午，空白天數不顯示假內容。待部署與補行程。
+> v1 已上線。已規劃視覺升級（主要地標 15–18 張圖、角色 PNG、柔和 UI），使用者明日準備素材後接續改版。
 
 ---
 
 ## 下一步（最多 3 項）
 
-1. GitHub Pages 設定：Branch `main`、Folder **`/docs`**
-2. 使用者補 Day 4、Day 5 上午、Day 6–9 後，更新 `itinerary.json`
-3. 部署後用手機驗證 Maps 連結與 tab 切換
+1. 使用者準備 `docs/images/spots/`（主要地標 15–18 張）與 `docs/images/characters/`（布布、一二 PNG）
+2. 新對話貼「開工指令」→ 實作柔和 UI + 圖文並排 + 景點介紹連結
+3. 補 Day 4、Day 5 上午、Day 6–9 行程（有內容時）
 
 ---
 
@@ -84,7 +86,9 @@
 | 項目 | 說明 |
 |------|------|
 | 空白天數 | 不填假文案，保持 `items: []` |
-| 本地預覽 | 需 `cd src && python3 -m http.server 8080`，直接開 HTML 無法 fetch JSON |
+| GitHub Pages 資料夾 | 只能選 `/(root)` 或 `/docs`，不能選 `/src` |
+| 景點圖片目錄 | 預定 `docs/images/spots/`、`docs/images/characters/` |
+| 本地預覽 | 需 `cd docs && python3 -m http.server 8080`，直接開 HTML 無法 fetch JSON |
 
 ---
 
