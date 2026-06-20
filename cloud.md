@@ -30,8 +30,8 @@
 ## 技術棧
 
 - **前端**：HTML + CSS + Vanilla JS（mobile-first 響應式）
-- **資料**：`src/data/itinerary.json`（單一真相來源）
-- **部署**：GitHub Pages（`src/` 為網站根目錄）或 Firebase Hosting
+- **資料**：`src/data/itinerary.json`（編輯用）；`docs/data/itinerary.json`（GitHub Pages 部署用，需同步）
+- **部署**：GitHub Pages 選 **`/docs`** 資料夾（GitHub 不支援 `/src`）
 - **驗證**：無 — 公開連結即可查看
 
 ---
@@ -73,7 +73,7 @@
 
 ## 下一步（最多 3 項）
 
-1. 建立 GitHub repo 並 push，啟用 GitHub Pages（根目錄 `/src`）
+1. GitHub Pages 設定：Branch `main`、Folder **`/docs`**
 2. 使用者補 Day 4、Day 5 上午、Day 6–9 後，更新 `itinerary.json`
 3. 部署後用手機驗證 Maps 連結與 tab 切換
 
