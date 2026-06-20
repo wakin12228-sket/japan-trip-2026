@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 開發階段：允許讀寫（上線前請改為正式規則）
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
