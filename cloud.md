@@ -13,7 +13,7 @@
 | **目標使用者** | 家族成員（出遊前後查行程） |
 | **部署網址** | https://wakin12228-sket.github.io/japan-trip-2026/ |
 | **GitHub** | https://github.com/wakin12228-sket/japan-trip-2026 |
-| **最後更新** | 2026-06-20（收工）
+| **最後更新** | 2026-06-21 |
 
 ---
 
