@@ -65,19 +65,20 @@
 - [x] 實作響應式行程頁 `src/index.html`
 - [x] GitHub repo 建立並 push
 - [x] 部署上線（GitHub Pages，`/docs` 資料夾）
-- [ ] 視覺升級：柔和風格 + 景點配圖 + 布布/一二角色（使用者準備素材中）
+- [x] 視覺升級：柔和風格 + 點擊展開相簿 + 左右滑動多圖
+- [x] 布布/一二角色顯示於頁首
 - [ ] 補齊 Day 4、Day 5 上午、Day 6–9 行程
 
 **上次收工摘要：**
-> v1 已上線。已規劃視覺升級（主要地標 15–18 張圖、角色 PNG、柔和 UI），使用者明日準備素材後接續改版。
+> 完成 v2 柔和 UI：景點可點擊展開下方相簿，多張可左右滑動；已串接使用者提供的 spots/characters 圖片。
 
 ---
 
 ## 下一步（最多 3 項）
 
-1. 使用者準備 `docs/images/spots/`（主要地標 15–18 張）與 `docs/images/characters/`（布布、一二 PNG）
-2. 新對話貼「開工指令」→ 實作柔和 UI + 圖文並排 + 景點介紹連結
-3. 補 Day 4、Day 5 上午、Day 6–9 行程（有內容時）
+1. 確認角色圖哪張是布布、哪張是一二（目前頁首預設配對）
+2. 補 Day 4、Day 5 上午、Day 6–9 行程或圖片
+3. push 後手機驗證相簿滑動
 
 ---
 
@@ -87,7 +88,7 @@
 |------|------|
 | 空白天數 | 不填假文案，保持 `items: []` |
 | GitHub Pages 資料夾 | 只能選 `/(root)` 或 `/docs`，不能選 `/src` |
-| 景點圖片目錄 | 預定 `docs/images/spots/`、`docs/images/characters/` |
+| 景點圖片目錄 | `docs/images/spots/`、`docs/images/characters/`（原誤拼 `iamges` 已更正） |
 | 本地預覽 | 需 `cd docs && python3 -m http.server 8080`，直接開 HTML 無法 fetch JSON |
 
 ---

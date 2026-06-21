@@ -3,65 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#1a365d">
+  <meta name="theme-color" content="#fceee8">
   <title>2026 家族日本之旅</title>
   <style>
     :root {
-      --bg: #f0f4f8;
+      --bg: #fef8f5;
       --surface: #ffffff;
-      --text: #1a202c;
-      --muted: #64748b;
-      --accent: #2563eb;
-      --accent-soft: #dbeafe;
-      --border: #e2e8f0;
-      --timeline: #cbd5e1;
-      --dot: #2563eb;
-      --tab-active: #1e40af;
-      --shadow: 0 1px 3px rgba(0,0,0,.08);
-      --radius: 12px;
+      --text: #4a4039;
+      --muted: #8b7e74;
+      --accent: #e8957a;
+      --accent-soft: #fde8e0;
+      --border: #f0e4dc;
+      --timeline: #ecd9cf;
+      --shadow: 0 4px 20px rgba(180, 140, 120, 0.12);
+      --radius: 18px;
       --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --day-accent: #e8957a;
+      --day-soft: #fde8e0;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      font-family: "PingFang TC", "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.55;
+      line-height: 1.6;
       min-height: 100vh;
-      padding-bottom: calc(1rem + var(--safe-bottom));
+      padding-bottom: calc(1.5rem + var(--safe-bottom));
     }
+
+    body[data-theme="sky"] { --day-accent: #7eb8da; --day-soft: #e3f2fa; }
+    body[data-theme="sea"] { --day-accent: #6db8a8; --day-soft: #dff5ef; }
+    body[data-theme="onsen"] { --day-accent: #b895c9; --day-soft: #f0e6f7; }
+    body[data-theme="gold"] { --day-accent: #d4a853; --day-soft: #faf0d8; }
+    body[data-theme="bloom"] { --day-accent: #e8957a; --day-soft: #fde8e0; }
 
     .header {
-      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
-      color: #fff;
+      background: linear-gradient(145deg, var(--day-soft) 0%, #fff 55%, var(--bg) 100%);
       padding: 1.25rem 1rem 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      box-shadow: 0 2px 12px rgba(0,0,0,.15);
+      border-bottom: 1px solid var(--border);
     }
 
+    .header-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: .75rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .header-text { flex: 1; min-width: 0; }
+
     .header h1 {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-weight: 700;
-      letter-spacing: .02em;
+      color: var(--text);
+      line-height: 1.3;
     }
 
     .header p {
       font-size: .875rem;
-      opacity: .85;
-      margin-top: .25rem;
+      color: var(--muted);
+      margin-top: .35rem;
+    }
+
+    .characters {
+      display: flex;
+      gap: .35rem;
+      flex-shrink: 0;
+    }
+
+    .characters img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,.08));
     }
 
     .tabs-wrap {
-      background: var(--surface);
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
       position: sticky;
-      top: 4.5rem;
-      z-index: 15;
-      box-shadow: var(--shadow);
+      top: 0;
+      z-index: 20;
     }
 
     .tabs {
@@ -70,8 +97,10 @@
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
-      padding: .5rem .75rem;
-      gap: .5rem;
+      padding: .65rem .75rem;
+      gap: .45rem;
+      max-width: 720px;
+      margin: 0 auto;
     }
 
     .tabs::-webkit-scrollbar { display: none; }
@@ -79,60 +108,60 @@
     .tab {
       flex: 0 0 auto;
       scroll-snap-align: start;
-      border: 1px solid var(--border);
+      border: 2px solid transparent;
       background: var(--bg);
       border-radius: 999px;
-      padding: .45rem .85rem;
-      font-size: .8rem;
+      padding: .5rem .9rem;
+      font-size: .78rem;
       cursor: pointer;
       white-space: nowrap;
-      transition: all .15s;
       color: var(--muted);
+      transition: transform .15s, background .15s;
     }
 
-    .tab.has-content { color: var(--text); }
+    .tab:active { transform: scale(.96); }
+    .tab.has-content { color: var(--text); background: #fff; border-color: var(--border); }
 
     .tab.active {
-      background: var(--tab-active);
-      border-color: var(--tab-active);
+      background: var(--day-accent);
+      border-color: var(--day-accent);
       color: #fff;
       font-weight: 600;
+      box-shadow: 0 3px 12px rgba(0,0,0,.1);
     }
 
-    .tab .dow { opacity: .75; margin-left: .15rem; }
+    .tab .dow { opacity: .85; margin-left: .1rem; }
 
     main { max-width: 720px; margin: 0 auto; padding: 1rem; }
 
     .day-header {
       background: var(--surface);
       border-radius: var(--radius);
-      padding: 1rem 1.1rem;
+      padding: 1.1rem 1.15rem;
       margin-bottom: 1rem;
       box-shadow: var(--shadow);
-      border: 1px solid var(--border);
+      border: 2px solid var(--day-soft);
     }
 
     .day-header .label {
       font-size: .75rem;
-      color: var(--accent);
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .06em;
+      font-weight: 700;
+      color: var(--day-accent);
+      letter-spacing: .05em;
     }
 
     .day-header h2 {
-      font-size: 1.1rem;
-      margin-top: .35rem;
-      line-height: 1.4;
+      font-size: 1.05rem;
+      margin-top: .4rem;
+      line-height: 1.45;
+      font-weight: 600;
     }
 
     .day-header .hotel {
-      margin-top: .6rem;
+      margin-top: .55rem;
       font-size: .85rem;
       color: var(--muted);
     }
-
-    .day-header .hotel::before { content: "🏨 "; }
 
     .hotels-card {
       background: var(--surface);
@@ -140,138 +169,245 @@
       padding: 1rem 1.1rem;
       margin-bottom: 1rem;
       box-shadow: var(--shadow);
-      border: 1px solid var(--border);
+      border: 2px solid var(--day-soft);
     }
 
     .hotels-card h3 {
       font-size: .85rem;
       color: var(--muted);
       margin-bottom: .75rem;
-      font-weight: 600;
     }
 
     .hotel-row {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
       gap: .75rem;
-      padding: .5rem 0;
-      border-bottom: 1px solid var(--border);
+      padding: .55rem 0;
+      border-bottom: 1px dashed var(--border);
       font-size: .9rem;
     }
 
     .hotel-row:last-child { border-bottom: none; }
 
-    .hotel-row .dates {
-      flex-shrink: 0;
-      font-size: .8rem;
-      color: var(--muted);
-    }
+    .hotel-row .dates { flex-shrink: 0; font-size: .8rem; color: var(--muted); }
 
-    .hotel-row a {
-      color: var(--accent);
+    .hotel-row .links { margin-top: .25rem; }
+    .hotel-row .links a,
+    .link-btn {
+      color: var(--day-accent);
       text-decoration: none;
       font-size: .8rem;
-      margin-top: .2rem;
-      display: inline-block;
+      font-weight: 500;
     }
 
-    .timeline { position: relative; padding-left: 1.5rem; }
+    .hotel-row.has-photos { cursor: pointer; border-radius: 12px; padding: .55rem .5rem; margin: 0 -.5rem; }
+    .hotel-row.has-photos:hover { background: var(--day-soft); }
+
+    .timeline { position: relative; padding-left: 1.35rem; }
 
     .timeline::before {
       content: "";
       position: absolute;
-      left: .45rem;
-      top: .5rem;
-      bottom: .5rem;
-      width: 2px;
-      background: var(--timeline);
+      left: .35rem;
+      top: .6rem;
+      bottom: .6rem;
+      width: 3px;
+      border-radius: 3px;
+      background: linear-gradient(to bottom, var(--day-accent), var(--timeline));
+      opacity: .5;
     }
+
+    .spot-wrap { margin-bottom: .85rem; }
 
     .item {
       position: relative;
       background: var(--surface);
       border-radius: var(--radius);
-      padding: .9rem 1rem;
-      margin-bottom: .75rem;
+      padding: 1rem 1.05rem;
       box-shadow: var(--shadow);
-      border: 1px solid var(--border);
+      border: 2px solid transparent;
+      transition: border-color .2s, transform .15s;
     }
 
     .item::before {
       content: "";
       position: absolute;
-      left: -1.28rem;
-      top: 1.1rem;
-      width: 10px;
-      height: 10px;
+      left: -1.15rem;
+      top: 1.15rem;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      background: var(--dot);
-      border: 2px solid var(--surface);
-      box-shadow: 0 0 0 2px var(--accent-soft);
+      background: var(--day-accent);
+      border: 3px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--day-soft);
+    }
+
+    .item.has-photos {
+      cursor: pointer;
+    }
+
+    .item.has-photos:hover { border-color: var(--day-soft); }
+    .item.has-photos.open {
+      border-color: var(--day-accent);
+      background: linear-gradient(to bottom, #fff, var(--day-soft));
+    }
+
+    .item.has-photos::after {
+      content: "點擊看照片";
+      display: inline-block;
+      margin-top: .5rem;
+      font-size: .75rem;
+      color: var(--day-accent);
+      background: var(--day-soft);
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .item.has-photos.open::after { content: "再次點擊收起"; }
+
+    .photo-count {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-left: .35rem;
     }
 
     .section-label {
-      font-size: .75rem;
+      font-size: .72rem;
       font-weight: 700;
-      color: var(--accent);
-      margin-bottom: .5rem;
+      color: var(--day-accent);
+      margin-bottom: .45rem;
       letter-spacing: .04em;
     }
 
     .item-time {
-      font-size: .8rem;
+      font-size: .78rem;
       font-weight: 700;
-      color: var(--accent);
-      margin-bottom: .35rem;
+      color: var(--day-accent);
+      margin-bottom: .3rem;
     }
 
     .item-title {
-      font-size: 1rem;
+      font-size: 1.02rem;
       font-weight: 600;
-      margin-bottom: .4rem;
+      line-height: 1.4;
     }
 
     .item-location {
-      font-size: .85rem;
+      font-size: .84rem;
       color: var(--muted);
-      margin-bottom: .35rem;
+      margin-top: .35rem;
     }
 
     .item-transport,
     .item-duration {
-      font-size: .82rem;
-      background: var(--accent-soft);
-      color: #1e40af;
+      font-size: .78rem;
+      background: var(--day-soft);
+      color: var(--text);
       display: inline-block;
-      padding: .2rem .55rem;
-      border-radius: 6px;
-      margin: .15rem .35rem .15rem 0;
+      padding: .22rem .55rem;
+      border-radius: 8px;
+      margin: .35rem .3rem 0 0;
     }
 
     .item-notes {
-      font-size: .875rem;
-      color: #334155;
-      margin-top: .5rem;
+      font-size: .86rem;
+      color: #5c534c;
+      margin-top: .55rem;
       white-space: pre-wrap;
+    }
+
+    .item-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: .6rem;
     }
 
     .map-link {
       display: inline-flex;
       align-items: center;
-      gap: .3rem;
-      margin-top: .55rem;
-      font-size: .82rem;
-      color: var(--accent);
+      gap: .25rem;
+      font-size: .8rem;
+      color: var(--day-accent);
       text-decoration: none;
       font-weight: 500;
+      padding: .25rem .5rem;
+      border-radius: 8px;
+      background: var(--day-soft);
     }
 
-    .map-link:hover { text-decoration: underline; }
-
-    .empty-day {
-      min-height: 40vh;
+    .gallery {
+      display: none;
+      margin-top: .65rem;
+      padding: .75rem;
+      background: #fff;
+      border-radius: 14px;
+      border: 2px solid var(--day-soft);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.5);
     }
+
+    .gallery.open { display: block; }
+
+    .gallery-hint {
+      font-size: .72rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: .5rem;
+    }
+
+    .gallery-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: .65rem;
+      padding-bottom: .25rem;
+    }
+
+    .gallery-track::-webkit-scrollbar { display: none; }
+
+    .gallery-slide {
+      flex: 0 0 88%;
+      scroll-snap-align: center;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .gallery-slide:only-child { flex-basis: 100%; }
+
+    .gallery-slide img {
+      width: 100%;
+      height: auto;
+      max-height: 280px;
+      object-fit: cover;
+      display: block;
+      vertical-align: middle;
+    }
+
+    .gallery-dots {
+      display: flex;
+      justify-content: center;
+      gap: .35rem;
+      margin-top: .55rem;
+    }
+
+    .gallery-dots span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--border);
+      transition: background .2s, transform .2s;
+    }
+
+    .gallery-dots span.active {
+      background: var(--day-accent);
+      transform: scale(1.2);
+    }
+
+    .empty-day { min-height: 30vh; }
 
     .loading, .error {
       text-align: center;
@@ -279,40 +415,51 @@
       color: var(--muted);
     }
 
-    .error { color: #dc2626; }
+    .error { color: #c45c5c; }
 
     @media (min-width: 640px) {
       .header { padding: 1.5rem 1.5rem 1.25rem; }
-      .header h1 { font-size: 1.5rem; }
-      .tabs-wrap { top: 5.25rem; }
+      .header h1 { font-size: 1.55rem; }
+      .characters img { width: 72px; height: 72px; }
       main { padding: 1.25rem 1.5rem 2rem; }
+      .gallery-slide { flex-basis: 70%; }
     }
   </style>
 </head>
-<body>
+<body data-theme="sky">
   <header class="header">
-    <h1 id="trip-title">載入中…</h1>
-    <p id="trip-subtitle"></p>
+    <div class="header-top">
+      <div class="header-text">
+        <h1 id="trip-title">載入中…</h1>
+        <p id="trip-subtitle"></p>
+      </div>
+      <div class="characters" id="characters" aria-hidden="true"></div>
+    </div>
   </header>
 
   <div class="tabs-wrap">
     <nav class="tabs" id="tabs" aria-label="選擇日期"></nav>
   </div>
 
-  <main id="main">
-    <p class="loading">載入行程中…</p>
-  </main>
+  <main id="main"><p class="loading">載入行程中…</p></main>
 
   <script>
-    let data = null;
-    let activeDay = 1;
+    var data = null;
+    var activeDay = 1;
+    var openGalleryId = null;
+
+    var dayThemes = { sky: "sky", sea: "sea", onsen: "onsen", gold: "gold", bloom: "bloom" };
+
+    function imgUrl(path) {
+      return path.split("/").map(function (p) { return encodeURIComponent(p); }).join("/");
+    }
 
     function mapsUrl(query) {
       return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query);
     }
 
     function formatDateShort(dateStr) {
-      const d = new Date(dateStr + "T00:00:00");
+      var d = new Date(dateStr + "T00:00:00");
       return (d.getMonth() + 1) + "/" + d.getDate();
     }
 
@@ -321,11 +468,26 @@
       return item.time;
     }
 
+    function itemId(dayNum, index) {
+      return "d" + dayNum + "-i" + index;
+    }
+
+    function renderCharacters() {
+      var el = document.getElementById("characters");
+      if (!data.meta.characters || !data.meta.characters.length) {
+        el.style.display = "none";
+        return;
+      }
+      el.innerHTML = data.meta.characters.map(function (c) {
+        return '<img src="' + imgUrl(c.src) + '" alt="' + c.name + '" title="' + c.name + '">';
+      }).join("");
+    }
+
     function renderTabs() {
-      const tabs = document.getElementById("tabs");
+      var tabs = document.getElementById("tabs");
       tabs.innerHTML = data.days.map(function (day) {
-        const hasContent = day.items && day.items.length > 0;
-        const cls = ["tab", activeDay === day.day ? "active" : "", hasContent ? "has-content" : ""].filter(Boolean).join(" ");
+        var hasContent = day.items && day.items.length > 0;
+        var cls = ["tab", activeDay === day.day ? "active" : "", hasContent ? "has-content" : ""].filter(Boolean).join(" ");
         return (
           '<button type="button" class="' + cls + '" data-day="' + day.day + '">' +
           "Day " + day.day + " · " + formatDateShort(day.date) +
@@ -336,77 +498,152 @@
       tabs.querySelectorAll(".tab").forEach(function (btn) {
         btn.addEventListener("click", function () {
           activeDay = Number(btn.dataset.day);
+          openGalleryId = null;
           renderTabs();
           renderDay();
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
       });
 
-      const activeBtn = tabs.querySelector('[data-day="' + activeDay + '"]');
+      var activeBtn = tabs.querySelector('[data-day="' + activeDay + '"]');
       if (activeBtn) activeBtn.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+    }
+
+    function buildGallery(id, images, hint, isOpen) {
+      if (!images || !images.length) return "";
+      var multi = images.length > 1;
+      var openCls = isOpen ? " open" : "";
+      var slides = images.map(function (src) {
+        return '<div class="gallery-slide"><img src="' + imgUrl(src) + '" alt="" loading="lazy"></div>';
+      }).join("");
+      var dots = multi
+        ? '<div class="gallery-dots" data-gallery="' + id + '">' +
+          images.map(function (_, i) {
+            return '<span class="' + (i === 0 ? "active" : "") + '"></span>';
+          }).join("") + "</div>"
+        : "";
+      return (
+        '<div class="gallery' + openCls + '" id="gallery-' + id + '">' +
+        (multi ? '<div class="gallery-hint">' + (hint || "左右滑動查看更多") + "</div>" : "") +
+        '<div class="gallery-track" data-gallery="' + id + '">' + slides + "</div>" +
+        dots + "</div>"
+      );
+    }
+
+    function bindGalleryEvents(scope) {
+      scope.querySelectorAll(".gallery-track").forEach(function (track) {
+        var gid = track.dataset.gallery;
+        var dots = scope.querySelector('.gallery-dots[data-gallery="' + gid + '"]');
+        track.addEventListener("scroll", function () {
+          if (!dots) return;
+          var w = track.offsetWidth;
+          var idx = Math.round(track.scrollLeft / (w * 0.88 + 10));
+          dots.querySelectorAll("span").forEach(function (dot, i) {
+            dot.classList.toggle("active", i === idx);
+          });
+        }, { passive: true });
+      });
+    }
+
+    function toggleGallery(id) {
+      if (openGalleryId === id) {
+        openGalleryId = null;
+      } else {
+        openGalleryId = id;
+      }
+      renderDay();
+      if (openGalleryId) {
+        setTimeout(function () {
+          var g = document.getElementById("gallery-" + openGalleryId);
+          if (g) g.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }, 50);
+      }
     }
 
     function renderHotels() {
       if (!data.essentials || !data.essentials.hotels || !data.essentials.hotels.length) return "";
-      const rows = data.essentials.hotels.map(function (h) {
-        const map = h.mapQuery
-          ? '<a href="' + mapsUrl(h.mapQuery) + '" target="_blank" rel="noopener">地圖</a>'
+      var rows = data.essentials.hotels.map(function (h, hi) {
+        var hid = "hotel-" + hi;
+        var hasPhotos = h.images && h.images.length;
+        var map = h.mapQuery
+          ? '<a class="link-btn" href="' + mapsUrl(h.mapQuery) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">地圖</a>'
           : "";
-        const ja = h.nameJa ? "（" + h.nameJa + "）" : "";
+        var photoHint = hasPhotos ? ' <span class="photo-count">(' + h.images.length + " 張)</span>" : "";
+        var ja = h.nameJa ? "（" + h.nameJa + "）" : "";
+        var rowCls = "hotel-row" + (hasPhotos ? " has-photos" : "");
+        var click = hasPhotos ? ' onclick="toggleGallery(\'' + hid + '\')"' : "";
         return (
-          '<div class="hotel-row">' +
-          '<div><strong>' + h.name + ja + "</strong>" + (map ? "<br>" + map : "") + "</div>" +
-          '<div class="dates">' + h.dates + "</div></div>"
+          '<div class="' + rowCls + '"' + click + ">" +
+          '<div><strong>' + h.name + ja + "</strong>" + photoHint +
+          (map ? '<div class="links">' + map + "</div>" : "") + "</div>" +
+          '<div class="dates">' + h.dates + "</div></div>" +
+          (hasPhotos ? buildGallery(hid, h.images, null, openGalleryId === hid) : "")
         );
       }).join("");
-      return '<div class="hotels-card"><h3>住宿一覽</h3>' + rows + "</div>";
+      return '<div class="hotels-card"><h3>🏡 住宿一覽</h3>' + rows + "</div>";
     }
 
-    function renderItem(item) {
-      let html = '<article class="item">';
+    function renderItem(dayNum, item, index) {
+      var id = itemId(dayNum, index);
+      var hasPhotos = item.images && item.images.length;
+      var cls = "item" + (hasPhotos ? " has-photos" : "") + (openGalleryId === id ? " open" : "");
+      var click = hasPhotos ? ' onclick="toggleGallery(\'' + id + '\')"' : "";
+
+      var html = '<div class="spot-wrap">';
+      html += '<article class="' + cls + '"' + click + ">";
       if (item.section) html += '<div class="section-label">' + item.section + "</div>";
       html += '<div class="item-time">' + formatTime(item) + "</div>";
-      html += '<div class="item-title">' + item.title + "</div>";
+      html += '<div class="item-title">' + item.title;
+      if (hasPhotos) html += '<span class="photo-count">(' + item.images.length + " 張)</span>";
+      html += "</div>";
       if (item.location) html += '<div class="item-location">📍 ' + item.location + "</div>";
-      if (item.transport) html += '<span class="item-transport">🚇 ' + item.transport + "</span>";
+      if (item.transport) html += '<span class="item-transport">🚃 ' + item.transport + "</span>";
       if (item.duration) html += '<span class="item-duration">⏱ ' + item.duration + "</span>";
       if (item.notes) html += '<div class="item-notes">' + item.notes + "</div>";
       if (item.mapQuery) {
-        html += '<a class="map-link" href="' + mapsUrl(item.mapQuery) + '" target="_blank" rel="noopener">🗺 在 Google Maps 開啟</a>';
+        html += '<div class="item-actions"><a class="map-link" href="' + mapsUrl(item.mapQuery) +
+          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">🗺 地圖</a></div>';
       }
       html += "</article>";
+      if (hasPhotos) {
+        html += buildGallery(id, item.images, null, openGalleryId === id);
+      }
+      html += "</div>";
       return html;
     }
 
     function renderDay() {
-      const main = document.getElementById("main");
-      const day = data.days.find(function (d) { return d.day === activeDay; });
+      var main = document.getElementById("main");
+      var day = data.days.find(function (d) { return d.day === activeDay; });
       if (!day) return;
 
-      let html = "";
+      document.body.setAttribute("data-theme", day.theme || "bloom");
 
+      var html = "";
       if (activeDay === 1) html += renderHotels();
 
       html += '<div class="day-header">';
       html += '<div class="label">Day ' + day.day + " · " + formatDateShort(day.date) + "（" + day.weekday + "）</div>";
       if (day.title) html += "<h2>" + day.title + "</h2>";
-      if (day.hotel) html += '<div class="hotel">' + day.hotel + "</div>";
+      if (day.hotel) html += '<div class="hotel">🏨 ' + day.hotel + "</div>";
       html += "</div>";
 
       if (!day.items || !day.items.length) {
         html += '<div class="empty-day"></div>';
       } else {
         html += '<div class="timeline">';
-        html += day.items.map(renderItem).join("");
+        html += day.items.map(function (item, i) { return renderItem(day.day, item, i); }).join("");
         html += "</div>";
       }
 
       main.innerHTML = html;
+
+      bindGalleryEvents(main);
     }
 
     async function init() {
       try {
-        const res = await fetch("data/itinerary.json");
+        var res = await fetch("data/itinerary.json");
         if (!res.ok) throw new Error("無法載入行程資料");
         data = await res.json();
 
@@ -414,14 +651,16 @@
         document.getElementById("trip-subtitle").textContent = data.meta.subtitle || "";
         document.title = data.meta.title;
 
-        const firstWithContent = data.days.find(function (d) { return d.items && d.items.length; });
+        renderCharacters();
+
+        var firstWithContent = data.days.find(function (d) { return d.items && d.items.length; });
         if (firstWithContent) activeDay = firstWithContent.day;
 
         renderTabs();
         renderDay();
       } catch (err) {
         document.getElementById("main").innerHTML =
-          '<p class="error">載入失敗：' + err.message + "<br><br>請用本地伺服器預覽，例如在 src 目錄執行：<code>python3 -m http.server 8080</code></p>";
+          '<p class="error">載入失敗：' + err.message + "</p>";
       }
     }
 

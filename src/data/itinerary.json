@@ -1,9 +1,13 @@
 {
   "meta": {
     "title": "2026 家族日本之旅",
-    "subtitle": "7月21日 – 7月29日",
+    "subtitle": "7月21日 – 7月29日 · 和布布、一二一起出發",
     "startDate": "2026-07-21",
-    "endDate": "2026-07-29"
+    "endDate": "2026-07-29",
+    "characters": [
+      { "name": "布布", "src": "images/characters/螢幕截圖 2026-06-21 07.57.12.png" },
+      { "name": "一二", "src": "images/characters/cn-11134216-7qukw-ljj9apca5l0d4a.jpeg" }
+    ]
   },
   "essentials": {
     "hotels": [
@@ -16,7 +20,17 @@
       {
         "name": "稻取東海湯苑",
         "dates": "7/23",
-        "mapQuery": "Inatori Tokaiyu"
+        "mapQuery": "Inatori Tokaiyu",
+        "images": [
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.44.56.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.45.32.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.45.51.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.46.01.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.46.33.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.46.53.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.47.16.png",
+          "images/spots/稻取東海湯苑截圖 2026-06-21 07.47.46.png"
+        ]
       },
       {
         "name": "the b ginza",
@@ -30,6 +44,7 @@
       "day": 1,
       "date": "2026-07-21",
       "weekday": "二",
+      "theme": "sky",
       "title": "抵達東京、輕鬆安頓與道地超市美食之夜",
       "hotel": "Via Inn 東京大井町（ヴィアイン東京大井町）",
       "items": [
@@ -45,7 +60,8 @@
           "title": "搭乘「成田特快 N'EX」前往市區",
           "transport": "成田特快 N'EX → 品川 → 大井町",
           "duration": "約 70 分鐘 + 換乘 3 分鐘",
-          "notes": "對號座列車，座位寬敞、有專門放大型行李的空間，還可以把四個座位轉成面對面。大家可以在車上吃點小零食、看風景休息。車程約 70 分鐘直達「品川站」，接著只要輕鬆換乘一站（約 3 分鐘），就抵達我們住宿的「大井町站」。"
+          "notes": "對號座列車，座位寬敞、有專門放大型行李的空間，還可以把四個座位轉成面對面。大家可以在車上吃點小零食、看風景休息。",
+          "images": ["images/spots/「成田特快 N'EX」.jpg"]
         },
         {
           "time": "18:45",
@@ -59,7 +75,8 @@
           "title": "日本超市尋寶：晚餐大採購",
           "location": "阪急百貨地下街 → Ito-Yokado (伊藤洋華堂)",
           "mapQuery": "Hankyu Oimachi",
-          "notes": "第一站：阪急百貨地下街。挑選高級的「黑毛和牛便當」、「熟食烤牛肉」，以及油花漂亮的「生魚片與握壽司」。第二站：Ito-Yokado (伊藤洋華堂)。採購日本 7 月當季最好吃的「水蜜桃」、解渴的無糖茶飲，還有大家想在路上吃的零食。"
+          "notes": "第一站：阪急百貨地下街。挑選高級的「黑毛和牛便當」、「熟食烤牛肉」，以及油花漂亮的「生魚片與握壽司」。第二站：Ito-Yokado (伊藤洋華堂)。採購日本 7 月當季最好吃的「水蜜桃」、解渴的無糖茶飲，還有大家想在路上吃的零食。",
+          "images": ["images/spots/Ito-Yokado (伊藤洋華堂).jpg"]
         },
         {
           "time": "20:15",
@@ -72,6 +89,7 @@
       "day": 2,
       "date": "2026-07-22",
       "weekday": "三",
+      "theme": "sea",
       "title": "橫濱海鮮市場、室內商場巡禮、海濱散步與頂級和牛饗宴",
       "hotel": "Via Inn 東京大井町",
       "items": [
@@ -99,7 +117,8 @@
           "title": "橫濱南部市場：海鮮與在地市集巡禮",
           "location": "橫濱南部市場",
           "mapQuery": "Yokohama City Central Wholesale Market",
-          "notes": "抵達橫濱在地人的廚房！逛逛乾貨與伴手禮。午餐：直接在市場內的食堂吃最新鮮的海鮮丼或是烤魚定食，體驗道地日本市場氛圍。"
+          "notes": "抵達橫濱在地人的廚房！逛逛乾貨與伴手禮。午餐：直接在市場內的食堂吃最新鮮的海鮮丼或是烤魚定食，體驗道地日本市場氛圍。",
+          "images": ["images/spots/橫濱南部市場.webp"]
         },
         {
           "time": "14:00",
@@ -108,7 +127,8 @@
           "duration": "約 40 分鐘",
           "location": "MARK IS 港未來",
           "mapQuery": "MARK IS minatomirai",
-          "notes": "出了車站直接進入商場，完全不會曬到太陽！走道極度寬敞，對長輩非常友善，各樓層都設有大量的舒適沙發區。大家可以舒服地吹冷氣度過下午最熱的時段，慢慢逛街或找間咖啡廳喝杯拿鐵休息。"
+          "notes": "出了車站直接進入商場，完全不會曬到太陽！走道極度寬敞，對長輩非常友善，各樓層都設有大量的舒適沙發區。",
+          "images": ["images/spots/MARK IS 港未來.jpeg"]
         },
         {
           "time": "16:00",
@@ -116,7 +136,8 @@
           "transport": "計程車（約 5 分鐘）",
           "location": "橫濱紅磚倉庫",
           "mapQuery": "Yokohama Red Brick Warehouse",
-          "notes": "傍晚稍微涼爽時在廣場吹海風、看夕陽。如果還是覺得熱，旁邊步行 3 分鐘就是「橫濱世界之窗 (World Porters)」，或是到碼頭邊的「橫濱 Hammerhead」吃個精緻的甜點，隨時能進室內休息。"
+          "notes": "傍晚稍微涼爽時在廣場吹海風、看夕陽。太熱可步行 3 分鐘到 World Porters 或 Hammerhead 吃甜點。",
+          "images": ["images/spots/橫濱紅磚倉庫 .jpeg"]
         },
         {
           "time": "17:00",
@@ -124,7 +145,8 @@
           "transport": "步行（約 10–15 分鐘，經新港橋梁）",
           "location": "山下公園",
           "mapQuery": "Yamashita Park Yokohama",
-          "notes": "帶爸爸媽媽來到橫濱最經典的海濱公園！可以近距離與歷史悠久的巨大郵輪「冰川丸」合照。黃昏時分海風徐徐，公園內有長椅，走累了全家人可以坐在海邊，欣賞漸漸亮起霓虹燈的橫濱港美景。"
+          "notes": "與歷史悠久的巨大郵輪「冰川丸」合照。黃昏海風徐徐，走累了可坐在海邊欣賞橫濱港夜景。",
+          "images": ["images/spots/山下公園.jpeg"]
         },
         {
           "time": "17:45",
@@ -132,7 +154,8 @@
           "transport": "元町・中華街站 → 港未來線 → 橫濱站（約 8 分鐘）",
           "location": "橫濱站",
           "mapQuery": "Yokohama Station",
-          "notes": "從起點站上車，全家人一定都有座位可以坐著休息！抵達橫濱站後，帶爸媽去逛逛 SOGO 熱鬧的地下美食街，或是到 NEWoMan 感受充滿質感的室內空間，悠哉地消磨餐前時光。"
+          "notes": "抵達橫濱站後，帶爸媽去逛逛 SOGO 地下美食街，或是到 NEWoMan 感受充滿質感的室內空間。",
+          "images": ["images/spots/橫濱.jpg"]
         },
         {
           "time": "18:30",
@@ -140,7 +163,14 @@
           "transport": "從橫濱站步行",
           "location": "ajito 燒肉總本店",
           "mapQuery": "ajito yakiniku Yokohama",
-          "notes": "超人氣的 ajito 燒肉！在舒適的環境中品嚐入口即化的頂級和牛，絕對讓大家讚不絕口。"
+          "notes": "超人氣的 ajito 燒肉！在舒適的環境中品嚐入口即化的頂級和牛，絕對讓大家讚不絕口。",
+          "images": [
+            "images/spots/焼肉 AJITO 総本店截圖 2026-06-21 07.38.12.png",
+            "images/spots/焼肉 AJITO 総本店截圖 2026-06-21 07.40.00.png",
+            "images/spots/焼肉 AJITO 総本店截圖 2026-06-21 07.40.26.png",
+            "images/spots/焼肉 AJITO 総本店截圖 2026-06-21 07.41.00.png",
+            "images/spots/焼肉 AJITO 総本店截圖 2026-06-21 07.41.14.png"
+          ]
         },
         {
           "time": "20:30",
@@ -155,6 +185,7 @@
       "day": 3,
       "date": "2026-07-23",
       "weekday": "四",
+      "theme": "onsen",
       "title": "伊豆稻取看海、金目鯛晚宴與夏日海上花火之旅",
       "hotel": "稻取東海湯苑（海景溫泉旅館）",
       "items": [
@@ -184,7 +215,9 @@
           "transport": "飯店專屬接送車 → 稻取東海湯苑",
           "location": "伊豆稻取站",
           "mapQuery": "Inatori Station",
-          "section": "午後漫步與海景溫泉"
+          "section": "午後漫步與海景溫泉",
+          "notes": "抵達車站後，搭乘飯店專屬接送車前往「稻取東海湯苑」。",
+          "images": ["images/spots/伊豆稻取.jpg"]
         },
         {
           "time": "15:00",
@@ -192,32 +225,42 @@
           "title": "辦理入住與戶外散步",
           "location": "稻取岬燈塔 · どんつく神社 · 池尻海岸",
           "mapQuery": "Inatori Cape Lighthouse",
-          "notes": "放好行李並稍微梳洗後，全家一起出發！沿著平緩的海岸步道走到「稻取岬燈塔」和「どんつく神社」看海拍照。回程順道去稻取文化公園，或在飯店正前方的池尻海岸踩水、吹吹海風。"
+          "notes": "沿著平緩的海岸步道看海拍照，或在池尻海岸踩水、吹吹海風。",
+          "images": ["images/spots/海岸步道.webp"]
         },
         {
           "time": "16:40",
           "endTime": "18:00",
           "title": "黃昏泡湯時刻",
-          "notes": "在晚餐前換上浴衣，在房間裡泡溫泉，一邊泡著暖呼呼的溫泉，一邊欣賞太平洋海天一色的魔幻時刻（Magic Hour），徹底洗去搭車的疲憊。"
+          "location": "稻取東海湯苑",
+          "notes": "換上浴衣泡溫泉，欣賞太平洋 Magic Hour，徹底洗去搭車疲憊。",
+          "images": [
+            "images/spots/稻取東海湯苑截圖 2026-06-21 07.44.56.png",
+            "images/spots/稻取東海湯苑截圖 2026-06-21 07.45.32.png",
+            "images/spots/稻取東海湯苑截圖 2026-06-21 07.46.53.png",
+            "images/spots/稻取東海湯苑截圖 2026-06-21 07.47.16.png"
+          ]
         },
         {
           "time": "18:00",
           "endTime": "20:15",
           "title": "享用豐盛的金目鯛晚餐",
           "section": "金目鯛晚宴與花火特等席",
-          "notes": "品嚐伊豆最著名的金目鯛海鮮會席料理。(💡 溫馨小提醒：辦理入住時，記得順便跟櫃檯確認並預約 18:00 用餐。將晚餐時間控制在 2 小時內悠閒享用完畢，後續看煙火的時間會最充裕喔！)"
+          "notes": "品嚐伊豆最著名的金目鯛海鮮會席料理。💡 入住時跟櫃檯確認並預約 18:00 用餐。"
         },
         {
           "time": "20:15",
           "endTime": "20:30",
           "title": "挑選專屬的「特等席」視角",
-          "notes": "方案 A（最震撼）：直接走到飯店門口外的海岸步道，感受煙火在頭頂炸裂的視覺震撼，以及夜空、海浪聲與花火交織的氛圍。方案 B（最舒適）：讓長輩留在正對海景的房間裡，直接拉開窗簾吹冷氣，享受私人的煙火秀。方案 C（最奢華）：提早前往房間的「露天風呂」，體驗邊泡溫泉、邊看海上花火的極致享受。"
+          "notes": "方案 A：海岸步道（最震撼）。方案 B：房間拉窗簾（最舒適）。方案 C：露天風呂（最奢華）。",
+          "images": ["images/spots/海岸步道.webp", "images/spots/煙花.jpeg"]
         },
         {
           "time": "20:30",
           "endTime": "20:40",
           "title": "欣賞夏日「花火演舞」",
-          "notes": "在這短短的 10 分鐘內，海面上將密集施放約 500 發煙火，記得拿起手機錄下五彩斑斕光芒倒映在太平洋上的唯美畫面！"
+          "notes": "約 10 分鐘、500 發煙火，記得錄下光芒倒映太平洋的畫面！",
+          "images": ["images/spots/煙花.jpeg"]
         },
         {
           "time": "20:45",
@@ -226,12 +269,12 @@
           "location": "Yamazaki Y Shop",
           "mapQuery": "Yamazaki Y Shop Inatori",
           "section": "星夜微醺與睡前放鬆",
-          "notes": "看完煙火後，趁著興奮的心情，穿著浴衣散步到附近的 Yamazaki Y Shop（營業至 23:00），買些靜岡限定牛奶、哈密瓜汽水或冰淇淋回房間享用。7-11 要行 7-9 分鐘。"
+          "notes": "穿著浴衣散步到 Yamazaki Y Shop，買靜岡限定牛奶或冰淇淋回房間享用。"
         },
         {
           "time": "21:30",
           "title": "深夜溫泉與放鬆時光",
-          "notes": "回房間稍作休息，睡前可以再去泡一次深夜溫泉。聽著規律的太平洋浪濤聲，與一二一起回味剛剛的璀璨煙火，享受這趟旅程中極具儀式感的一夜。"
+          "notes": "睡前再泡一次深夜溫泉，聽太平洋浪濤聲回味煙火。"
         }
       ]
     },
@@ -239,6 +282,7 @@
       "day": 4,
       "date": "2026-07-24",
       "weekday": "五",
+      "theme": "bloom",
       "title": "",
       "items": []
     },
@@ -246,6 +290,7 @@
       "day": 5,
       "date": "2026-07-25",
       "weekday": "六",
+      "theme": "gold",
       "title": "",
       "hotel": "the b ginza",
       "items": [
@@ -254,7 +299,7 @@
           "title": "第一站：抵達銀座與遲午餐",
           "location": "銀座 · the b ginza",
           "mapQuery": "the b ginza hotel",
-          "notes": "安頓行李：先至「the b ginza」寄放手提行李，並確認宅配的大件行李是否送達。午餐選擇：銀座 篝 (Ginza Kagari) 招牌濃郁雞白湯拉麵；銀座 鷄みつ (親子丼) 紐約時報推薦，炭香比內地雞，口感溫柔適合長輩；銀座三越 11-12 樓餐廳街：寬敞、冷氣強、免動腦備案，匯集各類經典日式料理。"
+          "notes": "先至 the b ginza 寄放手提行李。午餐：銀座 篝、銀座 鷄みつ、或銀座三越 11-12 樓餐廳街。"
         },
         {
           "time": "14:30",
@@ -262,7 +307,7 @@
           "title": "第二站：銀座中心（巨型旗艦店區）",
           "location": "銀座",
           "mapQuery": "Ginza Tokyo",
-          "notes": "此區棟距皆在 3 分鐘內，主攻服飾與大型雜貨。MUJI 無印良品 & LOFT：MUJI 採購食品區零食，長輩可隨時在附設食堂/麵包店坐下喝茶休息；LOFT 尋找搭配 Petrus 咖啡機的高質感拉花鋼杯或日系陶瓷杯。UNIQLO 旗艦店 & GU GINZA：12 層樓超齊全款式，全家一次買齊夏裝。ABC-MART GRAND STAGE：順路看鞋，若長輩需替換更好走的休閒鞋可直接在此解決。"
+          "notes": "MUJI、LOFT、UNIQLO、GU、ABC-MART 等旗艦店巡禮。"
         },
         {
           "time": "16:30",
@@ -271,12 +316,12 @@
           "transport": "往北散步 5–8 分鐘",
           "location": "有樂町 · 銀座 INZ",
           "mapQuery": "Yurakucho Tokyo",
-          "notes": "Marronnier Gate 2 館 (Standard Products & Nitori)：主攻極簡質感雙層玻璃杯與平價生活用品，長輩逛起來極有共鳴。Marronnier Gate 1 館 (Hands 漢斯)：走空橋即達，尋寶職人創意廚具與旅行收納。銀座 INZ 2 (WORKMAN Girl)：挑選高 CP 值透氣排汗 T 恤或防風輕薄外套，完美應對日常 2 到 5 公里的慢跑需求。"
+          "notes": "Marronnier Gate、Hands 漢斯、WORKMAN Girl 等。"
         },
         {
           "time": "18:30",
           "title": "晚餐與回程",
-          "notes": "晚餐選擇：鳥貴族 (串燒) 均一價連鎖居酒屋，平板點餐（含中文），大份量烤肉串，氣氛放鬆歡樂；銀座 煉瓦亭 (洋食) 1895 年創立的洋食元祖，體驗百年經典蛋包飯與紅酒燉牛肉，感受昭和復古風情。輕鬆回程：散步（約 10-15 分鐘）或直接攔計程車，帶著長輩與戰利品舒舒服服地回到「the b ginza」飯店休息。"
+          "notes": "鳥貴族或銀座 煉瓦亭。散步或計程車回 the b ginza。"
         }
       ]
     },
@@ -284,6 +329,7 @@
       "day": 6,
       "date": "2026-07-26",
       "weekday": "日",
+      "theme": "bloom",
       "title": "",
       "items": []
     },
@@ -291,6 +337,7 @@
       "day": 7,
       "date": "2026-07-27",
       "weekday": "一",
+      "theme": "bloom",
       "title": "",
       "items": []
     },
@@ -298,6 +345,7 @@
       "day": 8,
       "date": "2026-07-28",
       "weekday": "二",
+      "theme": "bloom",
       "title": "",
       "items": []
     },
@@ -305,6 +353,7 @@
       "day": 9,
       "date": "2026-07-29",
       "weekday": "三",
+      "theme": "bloom",
       "title": "",
       "items": []
     }
