@@ -5,8 +5,7 @@
     "startDate": "2026-07-21",
     "endDate": "2026-07-29",
     "characters": [
-      { "name": "布布", "src": "images/characters/螢幕截圖 2026-06-21 07.57.12.png" },
-      { "name": "一二", "src": "images/characters/cn-11134216-7qukw-ljj9apca5l0d4a.jpeg" }
+      { "name": "布布和一二", "src": "images/characters/family.png" }
     ]
   },
   "essentials": {
