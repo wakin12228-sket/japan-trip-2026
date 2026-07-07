@@ -2,7 +2,7 @@
   "meta": {
     "title": "2026 家族日本之旅",
     "subtitle": "7月21日 – 7月29日 · 和布布、一二一起出發",
-    "version": "2026-07-07e",
+    "version": "2026-07-07g",
     "startDate": "2026-07-21",
     "endDate": "2026-07-29",
     "characters": [
@@ -411,7 +411,8 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAAkS4"
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "label": "6:00–12:36"
             }
           ]
         },
@@ -426,6 +427,16 @@
             "images/spots/おおむろ輕食堂1.jpg",
             "images/spots/おおむろ輕食堂2.jpg",
             "images/spots/おおむろ輕食堂3.webp"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
+              "label": "10:35–12:30"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "label": "12:50–14:50"
+            }
           ]
         },
         {
@@ -445,8 +456,12 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAAkS4",
-              "label": "伊豆仙人掌動物公園"
+              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
+              "label": "12:30–"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "label": "14:46–30:00"
             }
           ]
         },
@@ -548,7 +563,8 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=uPQq9jeqiIw"
+              "url": "https://www.youtube.com/watch?v=qomLLQwOIKM&t=208s",
+              "label": "3:28 起"
             }
           ]
         },
