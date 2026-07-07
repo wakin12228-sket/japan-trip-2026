@@ -430,12 +430,12 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
-              "label": "12:47–15:00"
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=767s",
+              "label": "12:47 起"
             },
             {
-              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
-              "label": "10:37–12:40"
+              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo&t=637s",
+              "label": "10:37 起"
             }
           ]
         },
@@ -456,12 +456,12 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=898s",
               "label": "14:58 起"
             },
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
-              "label": "15:02"
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=902s",
+              "label": "15:02 起"
             }
           ]
         },
