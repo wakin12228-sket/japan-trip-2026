@@ -2,11 +2,14 @@
   "meta": {
     "title": "2026 家族日本之旅",
     "subtitle": "7月21日 – 7月29日 · 和布布、一二一起出發",
-    "version": "2026-07-07",
+    "version": "2026-07-07b",
     "startDate": "2026-07-21",
     "endDate": "2026-07-29",
     "characters": [
-      { "name": "布布和一二", "src": "images/characters/family.png" }
+      {
+        "name": "布布和一二",
+        "src": "images/characters/family.png"
+      }
     ]
   },
   "essentials": {
@@ -61,7 +64,9 @@
           "transport": "成田特快 N'EX → 品川 → 大井町",
           "duration": "約 70 分鐘 + 換乘 3 分鐘",
           "notes": "對號座列車，座位寬敞、有專門放大型行李的空間，還可以把四個座位轉成面對面。大家可以在車上吃點小零食、看風景休息。",
-          "images": ["images/spots/「成田特快 N'EX」.jpg"]
+          "images": [
+            "images/spots/「成田特快 N'EX」.jpg"
+          ]
         },
         {
           "time": "18:45",
@@ -76,7 +81,9 @@
           "location": "阪急百貨地下街 → Ito-Yokado (伊藤洋華堂)",
           "mapQuery": "Hankyu Oimachi",
           "notes": "第一站：阪急百貨地下街。挑選高級的「黑毛和牛便當」、「熟食烤牛肉」，以及油花漂亮的「生魚片與握壽司」。第二站：Ito-Yokado (伊藤洋華堂)。採購日本 7 月當季最好吃的「水蜜桃」、解渴的無糖茶飲，還有大家想在路上吃的零食。",
-          "images": ["images/spots/Ito-Yokado (伊藤洋華堂).jpg"]
+          "images": [
+            "images/spots/Ito-Yokado (伊藤洋華堂).jpg"
+          ]
         },
         {
           "time": "20:15",
@@ -118,7 +125,9 @@
           "location": "橫濱南部市場",
           "mapQuery": "Yokohama City Central Wholesale Market",
           "notes": "抵達橫濱在地人的廚房！逛逛乾貨與伴手禮。午餐：直接在市場內的食堂吃最新鮮的海鮮丼或是烤魚定食，體驗道地日本市場氛圍。",
-          "images": ["images/spots/橫濱南部市場.webp"]
+          "images": [
+            "images/spots/橫濱南部市場.webp"
+          ]
         },
         {
           "time": "14:00",
@@ -128,7 +137,9 @@
           "location": "MARK IS 港未來",
           "mapQuery": "MARK IS minatomirai",
           "notes": "出了車站直接進入商場，完全不會曬到太陽！走道極度寬敞，對長輩非常友善，各樓層都設有大量的舒適沙發區。",
-          "images": ["images/spots/MARK IS 港未來.jpeg"]
+          "images": [
+            "images/spots/MARK IS 港未來.jpeg"
+          ]
         },
         {
           "time": "16:00",
@@ -137,7 +148,9 @@
           "location": "橫濱紅磚倉庫",
           "mapQuery": "Yokohama Red Brick Warehouse",
           "notes": "傍晚稍微涼爽時在廣場吹海風、看夕陽。太熱可步行 3 分鐘到 World Porters 或 Hammerhead 吃甜點。",
-          "images": ["images/spots/橫濱紅磚倉庫 .jpeg"]
+          "images": [
+            "images/spots/橫濱紅磚倉庫 .jpeg"
+          ]
         },
         {
           "time": "17:00",
@@ -146,7 +159,9 @@
           "location": "山下公園",
           "mapQuery": "Yamashita Park Yokohama",
           "notes": "與歷史悠久的巨大郵輪「冰川丸」合照。黃昏海風徐徐，走累了可坐在海邊欣賞橫濱港夜景。",
-          "images": ["images/spots/山下公園.jpeg"]
+          "images": [
+            "images/spots/山下公園.jpeg"
+          ]
         },
         {
           "time": "17:45",
@@ -155,7 +170,9 @@
           "location": "橫濱站",
           "mapQuery": "Yokohama Station",
           "notes": "抵達橫濱站後，帶爸媽去逛逛 SOGO 地下美食街，或是到 NEWoMan 感受充滿質感的室內空間。",
-          "images": ["images/spots/橫濱.jpg"]
+          "images": [
+            "images/spots/橫濱.jpg"
+          ]
         },
         {
           "time": "18:30",
@@ -217,7 +234,9 @@
           "mapQuery": "Inatori Station",
           "section": "午後漫步與海景溫泉",
           "notes": "抵達車站後，搭乘飯店專屬接送車前往「稻取東海湯苑」。",
-          "images": ["images/spots/伊豆稻取.jpg"]
+          "images": [
+            "images/spots/伊豆稻取.jpg"
+          ]
         },
         {
           "time": "15:00",
@@ -226,7 +245,9 @@
           "location": "稻取岬燈塔 · どんつく神社 · 池尻海岸",
           "mapQuery": "Inatori Cape Lighthouse",
           "notes": "沿著平緩的海岸步道看海拍照，或在池尻海岸踩水、吹吹海風。",
-          "images": ["images/spots/海岸步道.webp"]
+          "images": [
+            "images/spots/海岸步道.webp"
+          ]
         },
         {
           "time": "16:40",
@@ -253,14 +274,19 @@
           "endTime": "20:30",
           "title": "挑選專屬的「特等席」視角",
           "notes": "方案 A：海岸步道（最震撼）。方案 B：房間拉窗簾（最舒適）。方案 C：露天風呂（最奢華）。",
-          "images": ["images/spots/海岸步道.webp", "images/spots/煙花.jpeg"]
+          "images": [
+            "images/spots/海岸步道.webp",
+            "images/spots/煙花.jpeg"
+          ]
         },
         {
           "time": "20:30",
           "endTime": "20:40",
           "title": "欣賞夏日「花火演舞」",
           "notes": "約 10 分鐘、500 發煙火，記得錄下光芒倒映太平洋的畫面！",
-          "images": ["images/spots/煙花.jpeg"]
+          "images": [
+            "images/spots/煙花.jpeg"
+          ]
         },
         {
           "time": "20:45",
@@ -314,14 +340,26 @@
           "title": "大室山：搭乘纜車與火山口漫步",
           "location": "大室山",
           "mapQuery": "Mount Omuro Izu",
-          "notes": "全家搭乘雙人吊椅纜車直達山頂，沿著直徑 300 公尺的火山口步道走一圈，欣賞 360 度無死角的相模灣與富士山美景。"
+          "notes": "全家搭乘雙人吊椅纜車直達山頂，沿著直徑 300 公尺的火山口步道走一圈，欣賞 360 度無死角的相模灣與富士山美景。",
+          "images": [
+            "images/spots/大室山.webp",
+            "images/spots/大室山1.webp",
+            "images/spots/大室山2.jpeg",
+            "images/spots/大室山的3.jpeg"
+          ]
         },
         {
           "time": "12:15",
           "endTime": "13:15",
           "title": "午餐：おおむろ輕食堂",
           "location": "大室山纜車站",
-          "notes": "在纜車站一樓的文青食堂吃招牌烏龍麵定食，吹冷氣避暑。"
+          "notes": "在纜車站一樓的文青食堂吃招牌烏龍麵定食，吹冷氣避暑。",
+          "images": [
+            "images/spots/おおむろ輕食堂.jpeg",
+            "images/spots/おおむろ輕食堂1.jpg",
+            "images/spots/おおむろ輕食堂2.jpg",
+            "images/spots/おおむろ輕食堂3.webp"
+          ]
         },
         {
           "time": "13:15",
@@ -331,7 +369,13 @@
           "mapQuery": "Izu Shaboten Zoo",
           "section": "午後伊豆精華全壘打",
           "transport": "步行 3 分鐘",
-          "notes": "帶爸媽去溫室區看植物、近距離餵食水豚，或搭乘輕鬆的「動物遊船」。"
+          "notes": "帶爸媽去溫室區看植物、近距離餵食水豚，或搭乘輕鬆的「動物遊船」。",
+          "images": [
+            "images/spots/伊豆仙人掌動物公園.jpeg",
+            "images/spots/伊豆仙人掌動物公園1.jpg",
+            "images/spots/伊豆仙人掌動物公園2.jpg",
+            "images/spots/伊豆仙人掌動物公園3.webp"
+          ]
         },
         {
           "time": "14:45",
@@ -346,7 +390,13 @@
           "title": "門脇吊橋與城崎海岸",
           "location": "城崎海岸 · 門脇吊橋",
           "mapQuery": "Jogasaki Coast",
-          "notes": "走在橫跨懸崖的吊橋上，感受海風與巨浪的震撼，並在松林步道與門脇燈塔拍全家福。"
+          "notes": "走在橫跨懸崖的吊橋上，感受海風與巨浪的震撼，並在松林步道與門脇燈塔拍全家福。",
+          "images": [
+            "images/spots/門脇吊橋.jpeg",
+            "images/spots/門脇吊橋2.jpeg",
+            "images/spots/門脇吊橋3.jpeg",
+            "images/spots/門脇吊橋4.jpeg"
+          ]
         },
         {
           "time": "16:15",
@@ -458,7 +508,12 @@
           "location": "銀座 しゃぶ通 好の笹",
           "mapQuery": "Ginza Shabutsu Yoshinosasa",
           "section": "晚餐與回程",
-          "notes": "みゆき（Miyuki）吃到飽套餐（約 5,500 日圓/人），飯店步行約 10 分鐘或搭的士，12 樓看夜景。包含黑毛和牛、招牌合鴨肉、國產豬肉、國產雞肉等 6 種肉類，現點現切、品質在銀座地區屬頂標水準。輕鬆回程：散步或計程車回 the b ginza。"
+          "notes": "みゆき（Miyuki）吃到飽套餐（約 5,500 日圓/人），飯店步行約 10 分鐘或搭的士，12 樓看夜景。包含黑毛和牛、招牌合鴨肉、國產豬肉、國產雞肉等 6 種肉類，現點現切、品質在銀座地區屬頂標水準。輕鬆回程：散步或計程車回 the b ginza。",
+          "images": [
+            "images/spots/銀座 しゃぶ通 好の笹1.JPG",
+            "images/spots/銀座 しゃぶ通 好の笹2.JPG",
+            "images/spots/銀座 しゃぶ通 好の笹3.PNG"
+          ]
         }
       ]
     },
@@ -484,14 +539,28 @@
           "title": "淺草寺與雷門漫步",
           "location": "淺草寺 · 仲見世通",
           "mapQuery": "Senso-ji Temple",
-          "notes": "帶長輩參拜經典的雷門與淺草寺。在仲見世通漫步，品嚐人形燒等傳統小吃，感受東京最經典的下町風情。"
+          "notes": "帶長輩參拜經典的雷門與淺草寺。在仲見世通漫步，品嚐人形燒等傳統小吃，感受東京最經典的下町風情。",
+          "images": [
+            "images/spots/雷門.jpg"
+          ]
         },
         {
           "time": "12:00",
           "endTime": "13:30",
           "title": "午餐：淺草周邊美食",
           "section": "午餐提案（視排隊狀況擇一）",
-          "notes": "百年鰻魚飯：駒形前川（浅草本店）或初小川。傳統天丼：大黑家 天麩羅 或三定。"
+          "notes": "百年鰻魚飯：駒形前川（浅草本店）或初小川。傳統天丼：大黑家 天麩羅 或三定。",
+          "images": [
+            "images/spots/駒形前川（淺草）.jpeg",
+            "images/spots/駒形前川（淺草）1.jpeg",
+            "images/spots/初小川.jpeg",
+            "images/spots/初小川1.jpeg",
+            "images/spots/初小川2.jpeg",
+            "images/spots/大黑家 1.jpeg",
+            "images/spots/大黑家 2.jpg",
+            "images/spots/三定.jpeg",
+            "images/spots/三定2.jpg"
+          ]
         },
         {
           "time": "13:30",
@@ -506,7 +575,10 @@
           "title": "Alpen TOKYO 爆買與長輩放鬆時光",
           "location": "Alpen TOKYO 新宿",
           "mapQuery": "Alpen TOKYO Shinjuku",
-          "notes": "主攻 10 層樓 Alpen TOKYO 尋找頂級跑步裝備。長輩可逛東口藥妝店，或在 Alpen 旁咖啡廳休息，享受週日步行者天國。"
+          "notes": "主攻 10 層樓 Alpen TOKYO 尋找頂級跑步裝備。長輩可逛東口藥妝店，或在 Alpen 旁咖啡廳休息，享受週日步行者天國。",
+          "images": [
+            "images/spots/Alpen TOKYO1.jpg"
+          ]
         },
         {
           "time": "17:30",
@@ -534,7 +606,13 @@
           "location": "梅丘寿司の美登利 銀座店",
           "mapQuery": "Uogashi Nihon-Ichi Ginza",
           "section": "晚餐：銀座大餐與夜間散步",
-          "notes": "從飯店步行約 10 分鐘。算準 EPARK 號碼進場，享用切得超厚的海膽、黑鮪魚與星鰻。"
+          "notes": "從飯店步行約 10 分鐘。算準 EPARK 號碼進場，享用切得超厚的海膽、黑鮪魚與星鰻。",
+          "images": [
+            "images/spots/梅丘壽司の美登利（銀座店）.jpeg",
+            "images/spots/梅丘壽司の美登利（銀座店）1.jpg",
+            "images/spots/梅丘壽司の美登利（銀座店）2.jpeg",
+            "images/spots/梅丘壽司の美登利（銀座店）4.jpg"
+          ]
         },
         {
           "time": "20:00",
@@ -658,7 +736,10 @@
           "duration": "約 45 分鐘",
           "location": "三井 Outlet Park 木更津",
           "mapQuery": "Mitsui Outlet Park Kisarazu",
-          "notes": "全車保證座位，長輩可舒舒服服補眠。⚠️ 建議搭乘 9 點多出發班次，10:00 開門時抵達。"
+          "notes": "全車保證座位，長輩可舒舒服服補眠。⚠️ 建議搭乘 9 點多出發班次，10:00 開門時抵達。",
+          "images": [
+            "images/spots/三井 Outlet Park 木更津.jpg"
+          ]
         },
         {
           "time": "10:20",
