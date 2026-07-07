@@ -2,7 +2,7 @@
   "meta": {
     "title": "2026 家族日本之旅",
     "subtitle": "7月21日 – 7月29日 · 和布布、一二一起出發",
-    "version": "2026-07-07h",
+    "version": "2026-07-07i",
     "startDate": "2026-07-21",
     "endDate": "2026-07-29",
     "characters": [
@@ -430,12 +430,12 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
-              "label": "12:30–"
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "label": "12:47–15:00"
             },
             {
-              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
-              "label": "14:46–30:00"
+              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
+              "label": "10:37–12:40"
             }
           ]
         },
@@ -456,12 +456,12 @@
           ],
           "videos": [
             {
-              "url": "https://www.youtube.com/watch?v=q3POHMpHsBo",
-              "label": "10:35–12:30"
+              "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
+              "label": "14:58 起"
             },
             {
               "url": "https://www.youtube.com/watch?v=A9XBSEAakS4&t=949s",
-              "label": "12:50–14:50"
+              "label": "15:02"
             }
           ]
         },
