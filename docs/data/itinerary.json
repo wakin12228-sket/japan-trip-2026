@@ -2,7 +2,7 @@
   "meta": {
     "title": "2026 家族日本之旅",
     "subtitle": "7月21日 – 7月29日 · 和布布、一二一起出發",
-    "version": "2026-07-07d",
+    "version": "2026-07-07e",
     "startDate": "2026-07-21",
     "endDate": "2026-07-29",
     "characters": [
@@ -83,6 +83,16 @@
           "notes": "第一站：阪急百貨地下街。挑選高級的「黑毛和牛便當」、「熟食烤牛肉」，以及油花漂亮的「生魚片與握壽司」。第二站：Ito-Yokado (伊藤洋華堂)。採購日本 7 月當季最好吃的「水蜜桃」、解渴的無糖茶飲，還有大家想在路上吃的零食。",
           "images": [
             "images/spots/Ito-Yokado (伊藤洋華堂).jpg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=Tp6l8TiVdv8",
+              "label": "Ito-Yokado"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=zXYpgldY3YQ",
+              "label": "阪急百貨"
+            }
           ]
         },
         {
@@ -127,6 +137,12 @@
           "notes": "抵達橫濱在地人的廚房！逛逛乾貨與伴手禮。午餐：直接在市場內的食堂吃最新鮮的海鮮丼或是烤魚定食，體驗道地日本市場氛圍。",
           "images": [
             "images/spots/橫濱南部市場.webp"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=jmyj7gB8oVs&t=262s",
+              "label": "橫濱南部市場"
+            }
           ]
         },
         {
@@ -139,6 +155,24 @@
           "notes": "出了車站直接進入商場，完全不會曬到太陽！走道極度寬敞，對長輩非常友善，各樓層都設有大量的舒適沙發區。",
           "images": [
             "images/spots/MARK IS 港未來.jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=YRqMnoCNGss"
+            }
+          ]
+        },
+        {
+          "time": "15:00",
+          "endTime": "15:45",
+          "title": "迴轉壽司：Megumi Suisan",
+          "location": "MARK IS 港未來",
+          "mapQuery": "Megumi Suisan Yokohama minatomirai",
+          "notes": "MARK IS 港未來內的迴轉壽司，可作逛街後的輕食或點心。",
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=RTyXmOsGgAI"
+            }
           ]
         },
         {
@@ -150,6 +184,11 @@
           "notes": "傍晚稍微涼爽時在廣場吹海風、看夕陽。太熱可步行 3 分鐘到 World Porters 或 Hammerhead 吃甜點。",
           "images": [
             "images/spots/橫濱紅磚倉庫 .jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=5rJSBHM1XvE"
+            }
           ]
         },
         {
@@ -161,6 +200,11 @@
           "notes": "與歷史悠久的巨大郵輪「冰川丸」合照。黃昏海風徐徐，走累了可坐在海邊欣賞橫濱港夜景。",
           "images": [
             "images/spots/山下公園.jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=NjzjOY5hZcA"
+            }
           ]
         },
         {
@@ -236,6 +280,12 @@
           "notes": "抵達車站後，搭乘飯店專屬接送車前往「稻取東海湯苑」。",
           "images": [
             "images/spots/伊豆稻取.jpg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=lVrOMPxs6IY&t=1265s",
+              "label": "伊豆稻取 / 稻取東海湯苑"
+            }
           ]
         },
         {
@@ -260,6 +310,12 @@
             "images/spots/稻取東海湯苑截圖 2026-06-21 07.45.32.png",
             "images/spots/稻取東海湯苑截圖 2026-06-21 07.46.53.png",
             "images/spots/稻取東海湯苑截圖 2026-06-21 07.47.16.png"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=lVrOMPxs6IY&t=1265s",
+              "label": "稻取東海湯苑溫泉"
+            }
           ]
         },
         {
@@ -286,6 +342,12 @@
           "notes": "約 10 分鐘、500 發煙火，記得錄下光芒倒映太平洋的畫面！",
           "images": [
             "images/spots/煙花.jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=XQXbYLulk1s",
+              "label": "伊豆稻取花火"
+            }
           ]
         },
         {
@@ -346,6 +408,11 @@
             "images/spots/大室山1.webp",
             "images/spots/大室山2.jpeg",
             "images/spots/大室山的3.jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=A9XBSEAAkS4"
+            }
           ]
         },
         {
@@ -375,6 +442,12 @@
             "images/spots/伊豆仙人掌動物公園1.jpg",
             "images/spots/伊豆仙人掌動物公園2.jpg",
             "images/spots/伊豆仙人掌動物公園3.webp"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=A9XBSEAAkS4",
+              "label": "伊豆仙人掌動物公園"
+            }
           ]
         },
         {
@@ -396,6 +469,11 @@
             "images/spots/門脇吊橋2.jpeg",
             "images/spots/門脇吊橋3.jpeg",
             "images/spots/門脇吊橋4.jpeg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=dNZxFu_fx18"
+            }
           ]
         },
         {
@@ -467,6 +545,11 @@
             "images/spots/熱海站 2026-07-07 16.11.26.png",
             "images/spots/熱海站 2026-07-07 16.11.47.png",
             "images/spots/熱海站 2026-07-07 16.12.54.png"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=uPQq9jeqiIw"
+            }
           ]
         },
         {
@@ -542,6 +625,11 @@
           "notes": "帶長輩參拜經典的雷門與淺草寺。在仲見世通漫步，品嚐人形燒等傳統小吃，感受東京最經典的下町風情。",
           "images": [
             "images/spots/雷門.jpg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=mh9hmY6fGcI"
+            }
           ]
         },
         {
@@ -612,6 +700,11 @@
             "images/spots/梅丘壽司の美登利（銀座店）1.jpg",
             "images/spots/梅丘壽司の美登利（銀座店）2.jpeg",
             "images/spots/梅丘壽司の美登利（銀座店）4.jpg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=ULtbB7Io2nQ"
+            }
           ]
         },
         {
@@ -739,6 +832,12 @@
           "notes": "全車保證座位，長輩可舒舒服服補眠。⚠️ 建議搭乘 9 點多出發班次，10:00 開門時抵達。",
           "images": [
             "images/spots/三井 Outlet Park 木更津.jpg"
+          ],
+          "videos": [
+            {
+              "url": "https://www.youtube.com/watch?v=JFLHkSxYX1U",
+              "label": "三井 Outlet Park 木更津"
+            }
           ]
         },
         {

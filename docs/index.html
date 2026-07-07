@@ -338,6 +338,19 @@
       background: var(--day-soft);
     }
 
+    .video-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .25rem;
+      font-size: .8rem;
+      color: #c4302b;
+      text-decoration: none;
+      font-weight: 500;
+      padding: .25rem .5rem;
+      border-radius: 8px;
+      background: #fdecea;
+    }
+
     .gallery {
       display: none;
       margin-top: .65rem;
@@ -584,9 +597,19 @@
       return '<div class="hotels-card"><h3>🏡 住宿一覽</h3>' + rows + "</div>";
     }
 
+    function renderVideos(item) {
+      if (!item.videos || !item.videos.length) return "";
+      return item.videos.map(function (video, i) {
+        var label = video.label || (item.videos.length > 1 ? "介紹影片 " + (i + 1) : "介紹影片");
+        return '<a class="video-link" href="' + video.url +
+          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">🎬 ' + label + "</a>";
+      }).join("");
+    }
+
     function renderItem(dayNum, item, index) {
       var id = itemId(dayNum, index);
       var hasPhotos = item.images && item.images.length;
+      var hasVideos = item.videos && item.videos.length;
       var cls = "item" + (hasPhotos ? " has-photos" : "") + (openGalleryId === id ? " open" : "");
       var click = hasPhotos ? ' onclick="toggleGallery(\'' + id + '\')"' : "";
 
@@ -601,9 +624,14 @@
       if (item.transport) html += '<span class="item-transport">🚃 ' + item.transport + "</span>";
       if (item.duration) html += '<span class="item-duration">⏱ ' + item.duration + "</span>";
       if (item.notes) html += '<div class="item-notes">' + item.notes + "</div>";
-      if (item.mapQuery) {
-        html += '<div class="item-actions"><a class="map-link" href="' + mapsUrl(item.mapQuery) +
-          '" target="_blank" rel="noopener" onclick="event.stopPropagation()">🗺 地圖</a></div>';
+      if (item.mapQuery || hasVideos) {
+        html += '<div class="item-actions">';
+        if (item.mapQuery) {
+          html += '<a class="map-link" href="' + mapsUrl(item.mapQuery) +
+            '" target="_blank" rel="noopener" onclick="event.stopPropagation()">🗺 地圖</a>';
+        }
+        html += renderVideos(item);
+        html += "</div>";
       }
       html += "</article>";
       if (hasPhotos) {
@@ -644,7 +672,7 @@
 
     async function init() {
       try {
-        var res = await fetch("data/itinerary.json?v=2026-07-07d", { cache: "no-cache" });
+        var res = await fetch("data/itinerary.json?v=2026-07-07e", { cache: "no-cache" });
         if (!res.ok) throw new Error("無法載入行程資料");
         data = await res.json();
 
