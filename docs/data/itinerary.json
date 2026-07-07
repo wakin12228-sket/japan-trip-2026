@@ -18,7 +18,7 @@
       },
       {
         "name": "稻取東海湯苑",
-        "dates": "7/23",
+        "dates": "7/23 – 7/24",
         "mapQuery": "Inatori Tokaiyu",
         "images": [
           "images/spots/稻取東海湯苑截圖 2026-06-21 07.44.56.png",
@@ -33,7 +33,7 @@
       },
       {
         "name": "the b ginza",
-        "dates": "7/25",
+        "dates": "7/25 – 7/28",
         "mapQuery": "the b ginza hotel"
       }
     ]
@@ -268,7 +268,7 @@
           "location": "Yamazaki Y Shop",
           "mapQuery": "Yamazaki Y Shop Inatori",
           "section": "星夜微醺與睡前放鬆",
-          "notes": "穿著浴衣散步到 Yamazaki Y Shop，買靜岡限定牛奶或冰淇淋回房間享用。"
+          "notes": "穿著浴衣散步到 Yamazaki Y Shop，買靜岡限定牛奶或冰淇淋回房間享用。7-11 要行 7–9 分鐘。"
         },
         {
           "time": "21:30",
@@ -281,46 +281,183 @@
       "day": 4,
       "date": "2026-07-24",
       "weekday": "五",
-      "theme": "bloom",
-      "title": "",
-      "items": []
+      "theme": "sea",
+      "title": "伊豆精華全壘打（火山口、可愛動物與懸崖海景）",
+      "hotel": "稻取東海湯苑（連泊第二晚）",
+      "items": [
+        {
+          "time": "06:30",
+          "endTime": "07:30",
+          "title": "晨間跑走：伊豆稻取半島絕景路線",
+          "section": "晨間活力與美味早點",
+          "notes": "換上透氣排汗裝備，沿著稻取岬海岸線跑走約 4.5 公里，途經稻取岬燈塔與稻取漁港，享受寧靜的太平洋早晨。"
+        },
+        {
+          "time": "08:00",
+          "endTime": "09:00",
+          "title": "悠閒日式早餐與換裝準備",
+          "notes": "在餐廳享用豐盛的日式朝食，吃飽後稍微休息、整理隨身背包。"
+        },
+        {
+          "time": "09:20",
+          "endTime": "10:15",
+          "title": "交通移動：前往大室山",
+          "transport": "飯店接駁車 → 伊豆稻取站 → JR 伊豆急行 → 伊豆高原站 → 東海巴士",
+          "duration": "約 55 分鐘",
+          "section": "大室山絕景與特色午餐",
+          "notes": "搭乘飯店 09:20 免費接駁車至伊豆稻取站，轉 JR 伊豆急行到伊豆高原站，從櫻花口搭東海巴士約 20 分鐘。⚠️ 接駁車班次僅 09:20、09:50、10:20，請提早至大廳等候。"
+        },
+        {
+          "time": "10:15",
+          "endTime": "12:00",
+          "title": "大室山：搭乘纜車與火山口漫步",
+          "location": "大室山",
+          "mapQuery": "Mount Omuro Izu",
+          "notes": "全家搭乘雙人吊椅纜車直達山頂，沿著直徑 300 公尺的火山口步道走一圈，欣賞 360 度無死角的相模灣與富士山美景。"
+        },
+        {
+          "time": "12:15",
+          "endTime": "13:15",
+          "title": "午餐：おおむろ輕食堂",
+          "location": "大室山纜車站",
+          "notes": "在纜車站一樓的文青食堂吃招牌烏龍麵定食，吹冷氣避暑。"
+        },
+        {
+          "time": "13:15",
+          "endTime": "14:45",
+          "title": "伊豆仙人掌動物公園",
+          "location": "伊豆仙人掌動物公園",
+          "mapQuery": "Izu Shaboten Zoo",
+          "section": "午後伊豆精華全壘打",
+          "transport": "步行 3 分鐘",
+          "notes": "帶爸媽去溫室區看植物、近距離餵食水豚，或搭乘輕鬆的「動物遊船」。"
+        },
+        {
+          "time": "14:45",
+          "endTime": "15:00",
+          "title": "交通移動：前往門脇吊橋",
+          "transport": "計程車（約 15 分鐘）",
+          "notes": "從動物園門口直接攔計程車，4 人共乘直達門脇吊橋停車場。"
+        },
+        {
+          "time": "15:00",
+          "endTime": "16:15",
+          "title": "門脇吊橋與城崎海岸",
+          "location": "城崎海岸 · 門脇吊橋",
+          "mapQuery": "Jogasaki Coast",
+          "notes": "走在橫跨懸崖的吊橋上，感受海風與巨浪的震撼，並在松林步道與門脇燈塔拍全家福。"
+        },
+        {
+          "time": "16:15",
+          "endTime": "17:00",
+          "title": "交通移動：返回伊豆稻取",
+          "transport": "計程車 → 城ヶ崎海岸站 → 火車 → 伊豆稻取站",
+          "notes": "抵達伊豆稻取站後，撥打飯店 0557-95-2121（接駁時段 14:00–18:00），約 5 分鐘內派車接回飯店。"
+        },
+        {
+          "time": "17:00",
+          "endTime": "18:30",
+          "title": "傍晚放鬆與溫泉時間",
+          "location": "稻取東海湯苑",
+          "section": "連泊的極致享受",
+          "notes": "在房間吹冷氣休息，或去泡景觀溫泉洗去一天的疲憊。"
+        },
+        {
+          "time": "18:30",
+          "title": "旅館精緻晚餐（Day 4 連泊專屬菜單）",
+          "location": "稻取東海湯苑",
+          "notes": "在旅館內享用連泊專屬的精緻會席料理。"
+        }
+      ]
     },
     {
       "day": 5,
       "date": "2026-07-25",
       "weekday": "六",
       "theme": "gold",
-      "title": "",
+      "title": "熱海神木巡禮、重返東京與銀座購物",
       "hotel": "the b ginza",
       "items": [
         {
-          "time": "13:30",
-          "title": "第一站：抵達銀座與遲午餐",
-          "location": "銀座 · the b ginza",
+          "time": "08:00",
+          "endTime": "09:20",
+          "title": "早餐、最後的溫泉與退房",
+          "section": "早晨時光與北上熱海",
+          "notes": "悠閒吃完早餐後，泡最後一次早晨溫泉，隨後辦理退房。⚠️ 請在退房時告知要搭乘 09:20 或 09:50 接駁車。"
+        },
+        {
+          "time": "09:20",
+          "endTime": "10:15",
+          "title": "交通移動：搭乘特急列車北上",
+          "transport": "飯店接駁車 → 伊豆稻取站 → 特急踊子號 → 熱海站",
+          "notes": "搭乘飯店接駁車至伊豆稻取站，轉乘特急列車（如踊子號）於熱海站下車。"
+        },
+        {
+          "time": "10:15",
+          "endTime": "10:30",
+          "title": "寄放行李與轉乘",
+          "location": "熱海站",
+          "mapQuery": "Atami Station",
+          "notes": "將 2 個大行李箱鎖入熱海站大型置物櫃。若遇滿櫃，請尋找車站周邊「手荷物預かり所」付費寄放。"
+        },
+        {
+          "time": "10:30",
+          "endTime": "11:30",
+          "title": "來宮神社：兩千年大楠樹",
+          "location": "來宮神社",
+          "mapQuery": "Kinomiya Shrine Atami",
+          "section": "熱海神木巡禮與海鮮午餐",
+          "transport": "計程車（約 5–8 分鐘）",
+          "notes": "參拜樹齡超過兩千年的巨大楠木，傳說繞樹走一圈能延壽一年。"
+        },
+        {
+          "time": "11:30",
+          "endTime": "13:00",
+          "title": "熱海車站前：平和通商店街午餐",
+          "location": "平和通商店街",
+          "mapQuery": "Atami Station",
+          "notes": "搭車回到熱海車站周邊，在商店街吃海鮮定食，購買靜岡伴手禮。"
+        },
+        {
+          "time": "13:00",
+          "endTime": "14:00",
+          "title": "交通移動：搭乘新幹線直達東京",
+          "transport": "東海道新幹線 → 東京站或品川站 → 銀座",
+          "section": "重返東京與銀座採購",
+          "notes": "從置物櫃領取行李，搭乘新幹線抵達東京站或品川站，轉乘前往銀座。"
+        },
+        {
+          "time": "14:00",
+          "endTime": "14:30",
+          "title": "安頓行李：抵達銀座飯店",
+          "location": "the b ginza",
           "mapQuery": "the b ginza hotel",
-          "notes": "先至 the b ginza 寄放手提行李。午餐：銀座 篝、銀座 鷄みつ、或銀座三越 11-12 樓餐廳街。"
+          "notes": "先至 the b ginza 寄放手提行李，確認宅配大件行李是否送達。午餐選擇：銀座 篝（雞白湯拉麵）、銀座 鷄みつ（親子丼）、或銀座三越 11–12 樓餐廳街。"
         },
         {
           "time": "14:30",
           "endTime": "16:30",
-          "title": "第二站：銀座中心（巨型旗艦店區）",
+          "title": "銀座中心（巨型旗艦店區）",
           "location": "銀座",
           "mapQuery": "Ginza Tokyo",
-          "notes": "MUJI、LOFT、UNIQLO、GU、ABC-MART 等旗艦店巡禮。"
+          "notes": "MUJI 無印良品 & LOFT、UNIQLO 旗艦店 & GU GINZA、ABC-MART GRAND STAGE 等，棟距皆在 3 分鐘內。"
         },
         {
           "time": "16:30",
-          "endTime": "18:30",
-          "title": "第三站：有樂町邊界（隱藏版平價寶庫區）",
+          "endTime": "18:00",
+          "title": "有樂町邊界（隱藏版平價寶庫區）",
           "transport": "往北散步 5–8 分鐘",
           "location": "有樂町 · 銀座 INZ",
           "mapQuery": "Yurakucho Tokyo",
-          "notes": "Marronnier Gate、Hands 漢斯、WORKMAN Girl 等。"
+          "notes": "Marronnier Gate 2（Standard Products & Nitori）、Marronnier Gate 1（Hands 漢斯）、銀座 INZ 2（WORKMAN Girl）。"
         },
         {
           "time": "18:30",
-          "title": "晚餐與回程",
-          "notes": "鳥貴族或銀座 煉瓦亭。散步或計程車回 the b ginza。"
+          "title": "晚餐：銀座 しゃぶ通 好の笹",
+          "location": "銀座 しゃぶ通 好の笹",
+          "mapQuery": "Ginza Shabutsu Yoshinosasa",
+          "section": "晚餐與回程",
+          "notes": "みゆき（Miyuki）吃到飽套餐（約 5,500 日圓/人），飯店步行約 10 分鐘或搭的士，12 樓看夜景。包含黑毛和牛、招牌合鴨肉、國產豬肉、國產雞肉等 6 種肉類，現點現切、品質在銀座地區屬頂標水準。輕鬆回程：散步或計程車回 the b ginza。"
         }
       ]
     },
@@ -329,32 +466,314 @@
       "date": "2026-07-26",
       "weekday": "日",
       "theme": "bloom",
-      "title": "",
-      "items": []
+      "title": "淺草和風體驗 ➡ 新宿運動裝備大採購",
+      "hotel": "the b ginza",
+      "items": [
+        {
+          "time": "09:00",
+          "endTime": "09:30",
+          "title": "交通移動：直達淺草",
+          "transport": "東京地鐵銀座線（一車直達）",
+          "section": "上午：經典下町與和風體驗",
+          "notes": "從銀座搭乘銀座線一車直達淺草，完全免換乘，對長輩非常友善。"
+        },
+        {
+          "time": "09:30",
+          "endTime": "12:00",
+          "title": "淺草寺與雷門漫步",
+          "location": "淺草寺 · 仲見世通",
+          "mapQuery": "Senso-ji Temple",
+          "notes": "帶長輩參拜經典的雷門與淺草寺。在仲見世通漫步，品嚐人形燒等傳統小吃，感受東京最經典的下町風情。"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:30",
+          "title": "午餐：淺草周邊美食",
+          "section": "午餐提案（視排隊狀況擇一）",
+          "notes": "百年鰻魚飯：駒形前川（浅草本店）或初小川。傳統天丼：大黑家 天麩羅 或三定。"
+        },
+        {
+          "time": "13:30",
+          "endTime": "14:15",
+          "title": "交通移動：前往新宿",
+          "transport": "銀座線轉丸之內線或 JR",
+          "section": "下午：新宿步行者天國與裝備採購"
+        },
+        {
+          "time": "14:15",
+          "endTime": "18:00",
+          "title": "Alpen TOKYO 爆買與長輩放鬆時光",
+          "location": "Alpen TOKYO 新宿",
+          "mapQuery": "Alpen TOKYO Shinjuku",
+          "notes": "主攻 10 層樓 Alpen TOKYO 尋找頂級跑步裝備。長輩可逛東口藥妝店，或在 Alpen 旁咖啡廳休息，享受週日步行者天國。"
+        },
+        {
+          "time": "17:30",
+          "title": "EPARK 抽取美登利號碼牌",
+          "section": "傍晚：超完美時間差",
+          "notes": "在新宿準備離開時，打開 EPARK 搜尋「梅丘寿司の美登利 銀座店」抽取線上號碼牌，免去排隊之苦。"
+        },
+        {
+          "time": "17:30",
+          "endTime": "18:15",
+          "title": "交通移動：新宿 ➡ 銀座",
+          "transport": "東京地鐵丸之內線（一車直達）"
+        },
+        {
+          "time": "18:15",
+          "endTime": "18:30",
+          "title": "飯店卸貨，解放雙手",
+          "location": "the b ginza",
+          "notes": "把 Alpen 買的裝備全部丟在房間，稍微洗把臉，兩手空空輕鬆出門。"
+        },
+        {
+          "time": "18:30",
+          "endTime": "20:00",
+          "title": "晚餐：梅丘壽司の美登利（銀座店）",
+          "location": "梅丘寿司の美登利 銀座店",
+          "mapQuery": "Uogashi Nihon-Ichi Ginza",
+          "section": "晚餐：銀座大餐與夜間散步",
+          "notes": "從飯店步行約 10 分鐘。算準 EPARK 號碼進場，享用切得超厚的海膽、黑鮪魚與星鰻。"
+        },
+        {
+          "time": "20:00",
+          "title": "銀座週日夜晚散步",
+          "notes": "吃飽後全家漫步在銀座充滿質感的街道上，幫助消化，再慢慢走回飯店休息。"
+        }
+      ]
     },
     {
       "day": 7,
       "date": "2026-07-27",
       "weekday": "一",
-      "theme": "bloom",
-      "title": "",
-      "items": []
+      "theme": "sky",
+      "title": "迪士尼夢幻時光與豐洲海景商場（煙火與浪漫夜間版）",
+      "hotel": "the b ginza",
+      "items": [
+        {
+          "time": "08:00",
+          "endTime": "09:00",
+          "title": "你們兩人：前往東京迪士尼樂園",
+          "transport": "銀座 → 東京站 → JR 京葉線 → 舞濱站",
+          "section": "上午：分頭出發，各自精彩",
+          "notes": "週一平日入園，有效避開週末人潮，盡情享受兩人世界。"
+        },
+        {
+          "time": "09:30",
+          "endTime": "10:00",
+          "title": "爸媽專屬：前往豐洲 LaLaport",
+          "transport": "有樂町線一車直達豐洲站",
+          "location": "豐洲 LaLaport",
+          "mapQuery": "LaLaport Toyosu",
+          "notes": "長輩睡飽後，在超大型日常商場悠閒逛街，享受無敵海景與平價採購。"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:30",
+          "title": "午餐：分頭享用",
+          "section": "午餐：分頭享用專屬美食",
+          "notes": "豐洲 LaLaport（爸媽）：豐洲市場直送海鮮/壽司或無敵海景義大利麵。迪士尼（你們兩人）：火雞腿、造型包子或排隊較少的餐廳。"
+        },
+        {
+          "time": "13:30",
+          "endTime": "16:30",
+          "title": "你們兩人：迪士尼午後時光",
+          "location": "東京迪士尼樂園",
+          "mapQuery": "Tokyo Disneyland",
+          "section": "下午：樂園遊行與悠閒海景",
+          "notes": "盡情攻克熱門設施，觀賞經典的日間遊行。"
+        },
+        {
+          "time": "13:30",
+          "endTime": "17:00",
+          "title": "爸媽專屬：LaLaport 採購與海邊散步",
+          "location": "Urban Dock 豐洲",
+          "notes": "在商場內採購平價生活用品，傍晚走到 Urban Dock 平台，欣賞東京灣夕陽與彩虹大橋。"
+        },
+        {
+          "time": "16:30",
+          "endTime": "17:30",
+          "title": "你們兩人：錯峰晚餐戰略",
+          "location": "東京迪士尼樂園",
+          "section": "傍晚至夜晚：完美錯峰與魔幻時刻",
+          "notes": "提早在人潮湧現前把晚餐解決！前往紅心女王宴會大廳或提前預訂的特色餐廳。"
+        },
+        {
+          "time": "17:30",
+          "endTime": "18:30",
+          "title": "你們兩人：魔幻時刻攝影與夜間設施",
+          "notes": "捕捉灰姑娘城堡與世界市集亮燈後的絕美夜景。接著玩夜間版叢林巡航或巨雷山。"
+        },
+        {
+          "time": "18:00",
+          "endTime": "19:00",
+          "title": "爸媽的專屬晚餐與回程",
+          "transport": "有樂町線一車直達銀座",
+          "notes": "長輩在 LaLaport 內明亮餐廳吃完晚餐，悠哉搭有樂町線回銀座飯店洗澡休息。"
+        },
+        {
+          "time": "18:30",
+          "endTime": "19:30",
+          "title": "你們兩人：卡位與遊行前置準備",
+          "notes": "買些吉拿棒或熱飲，找靠近城堡廣場或遊行路線的絕佳位子休息。"
+        },
+        {
+          "time": "19:30",
+          "title": "夜間電子大遊行「夢之光」",
+          "notes": "迪士尼最招牌的百萬顆 LED 華麗花車遊行，看完遊行直接留在原地等待煙火。"
+        },
+        {
+          "time": "20:30",
+          "title": "迪士尼浪漫煙火",
+          "notes": "觀賞經典的夜間城堡煙火秀，為迪士尼之旅畫下最高潮的完美句點。"
+        },
+        {
+          "time": "21:30",
+          "title": "返回銀座與宵夜時光",
+          "notes": "散場搭車回到銀座，若肚子餓可去鳥貴族或周邊拉麵店，再慢慢走回飯店休息。"
+        }
+      ]
     },
     {
       "day": 8,
       "date": "2026-07-28",
       "weekday": "二",
-      "theme": "bloom",
-      "title": "",
-      "items": []
+      "theme": "gold",
+      "title": "木更津 Outlet 輕鬆爆買日 ＋ 銀座浪漫收官夜",
+      "hotel": "the b ginza",
+      "items": [
+        {
+          "time": "08:30",
+          "endTime": "09:15",
+          "title": "悠閒早餐與前往車站",
+          "section": "極速直達：高速巴士出發",
+          "notes": "在飯店或周邊享用早餐後，準備前往搭車。"
+        },
+        {
+          "time": "09:30",
+          "endTime": "10:20",
+          "title": "交通移動：直達高速巴士",
+          "transport": "銀座 → 東京車站八重洲口 → 高速巴士",
+          "duration": "約 45 分鐘",
+          "location": "三井 Outlet Park 木更津",
+          "mapQuery": "Mitsui Outlet Park Kisarazu",
+          "notes": "全車保證座位，長輩可舒舒服服補眠。⚠️ 建議搭乘 9 點多出發班次，10:00 開門時抵達。"
+        },
+        {
+          "time": "10:20",
+          "endTime": "10:30",
+          "title": "領取優惠券",
+          "notes": "至綜合服務中心出示護照，領取訪日外國人專屬折價券。木更津全區單層平面，對長輩膝蓋極度友善。"
+        },
+        {
+          "time": "10:30",
+          "endTime": "12:30",
+          "title": "上午場：主力品牌攻防戰",
+          "section": "黃金三小時：分進合擊購物戰略",
+          "notes": "Nike、Adidas、Arc'teryx、FURLA 等。爸媽可逛 Le Creuset、雙人牌刀具、Ralph Lauren，累了隨時坐沙發區休息。"
+        },
+        {
+          "time": "12:30",
+          "endTime": "13:45",
+          "title": "午餐：超大型 Food Court",
+          "section": "匯聚美食：不妥協的午餐時光",
+          "notes": "松戶富田製麵（濃厚魚介豚骨沾麵）、金子半之助（豪華天丼）、函太郎迴轉壽司（新鮮干貝與牡丹蝦）。"
+        },
+        {
+          "time": "13:45",
+          "endTime": "15:30",
+          "title": "下午場：國際精品與下午茶",
+          "notes": "逛逛 Gucci、Loewe、Celine 等國際精品區。長輩走累了可在 Starbucks 休息。"
+        },
+        {
+          "time": "15:30",
+          "endTime": "16:30",
+          "title": "交通移動：滿載而歸搭車回東京",
+          "transport": "高速巴士直達東京車站",
+          "section": "查漏補缺與輕鬆回程",
+          "notes": "⚠️ 建議 15:30 或 16:00 回程，避開 17:00 後下班車潮。"
+        },
+        {
+          "time": "17:00",
+          "endTime": "18:00",
+          "title": "飯店放行李與稍作休息",
+          "location": "the b ginza",
+          "section": "銀座之夜：旅程的完美收尾",
+          "transport": "東京車站 → 計程車",
+          "notes": "把戰利品安置好，洗把臉休息一下。"
+        },
+        {
+          "time": "18:30",
+          "title": "銀座精緻晚餐與最後的夜間散步",
+          "notes": "選項 A：根室花丸（東急 Plaza 銀座店）— 食材超級鮮甜，窗邊欣賞銀座夜景。選項 B：銀座 煉瓦亭 — 1895 年創立洋食元祖，經典蛋包飯與紅酒燉牛肉。吃飽後全家在夜晚點燈的銀座街頭散步。"
+        }
+      ]
     },
     {
       "day": 9,
       "date": "2026-07-29",
       "weekday": "三",
-      "theme": "bloom",
-      "title": "",
-      "items": []
+      "theme": "sky",
+      "title": "悠閒早晨、最後採買與舒適返程",
+      "hotel": "the b ginza ➡ 準備前往機場",
+      "items": [
+        {
+          "time": "09:00",
+          "endTime": "10:30",
+          "title": "悠閒早午餐與咖啡時光",
+          "section": "上午：沒有壓力的銀座早晨",
+          "notes": "不用趕行程，可看看銀座周邊高分質感咖啡廳或日式朝食，全家享受沒有壓力的早晨。"
+        },
+        {
+          "time": "10:30",
+          "endTime": "11:30",
+          "title": "飯店退房與最後裝箱",
+          "location": "the b ginza",
+          "notes": "把伴手禮和戰利品做最後打包。標準退房時間通常 11:00，退房後可暫存行李在大廳。💡 若伴手禮還沒買齊（NY Perfect Cheese、東京芭娜娜等），10:00 百貨開門時可去地下美食街掃貨。"
+        },
+        {
+          "time": "11:30",
+          "endTime": "12:00",
+          "title": "交通移動：銀座 ➡ 東京車站（成田線）",
+          "transport": "計程車（約 5–10 分鐘）",
+          "section": "中午：無縫接軌前往機場（成田 NRT）",
+          "notes": "建議直接叫兩台計程車或 UberXL 廂型車，不用提著超重行李在地鐵找電梯，對長輩最友善。"
+        },
+        {
+          "time": "12:00",
+          "endTime": "13:00",
+          "title": "搭乘特快列車或巴士前往成田",
+          "transport": "成田特快 N'EX 或 TYO-NRT 巴士",
+          "duration": "約 1 小時",
+          "location": "成田國際機場",
+          "mapQuery": "Narita International Airport",
+          "notes": "選項 A（最舒適）：成田特快 N'EX，全車對號座。選項 B（最平價）：東京車站直達機場巴士。約 13:15 抵達成田機場。"
+        },
+        {
+          "time": "12:15",
+          "endTime": "13:00",
+          "title": "交通移動：銀座 ➡ 羽田機場（HND 備案）",
+          "transport": "計程車或京急機場線",
+          "duration": "約 40 分鐘",
+          "notes": "若從羽田回程：計程車四人分攤划算，或淺草線直通京急機場線。約 13:00 抵達羽田機場。"
+        },
+        {
+          "time": "13:30",
+          "endTime": "14:30",
+          "title": "報到托運與免稅店最後血拼",
+          "section": "下午：機場報到與滿載而歸",
+          "notes": "完成行李托運後，機場內可吃烏龍麵。入關後利用最後時間在免稅店補齊保養品或零食。"
+        },
+        {
+          "time": "14:55",
+          "title": "抵達登機門準備登機"
+        },
+        {
+          "time": "15:35",
+          "title": "班機起飛",
+          "notes": "帶著滿滿的美好回憶，在飛機上好好休息，平安返程！"
+        }
+      ]
     }
   ]
 }
