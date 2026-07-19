@@ -192,6 +192,28 @@
 
     .hotel-row .dates { flex-shrink: 0; font-size: .8rem; color: var(--muted); }
 
+    .coffee-card .coffee-disclaimer {
+      font-size: .8rem;
+      color: var(--muted);
+      margin-bottom: .75rem;
+      line-height: 1.5;
+    }
+
+    .coffee-row {
+      padding: .55rem 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .coffee-row:last-child { border-bottom: none; }
+
+    .coffee-row .area {
+      display: block;
+      font-weight: 600;
+      margin-bottom: .2rem;
+    }
+
     .hotel-row .links { margin-top: .25rem; }
     .hotel-row .links a,
     .link-btn {
@@ -597,6 +619,26 @@
       return '<div class="hotels-card"><h3>🏡 住宿一覽</h3>' + rows + "</div>";
     }
 
+    function renderCoffeeTips() {
+      var tip = data.essentials && data.essentials.coffeeTips;
+      if (!tip || !tip.items || !tip.items.length) return "";
+      var rows = tip.items.map(function (c) {
+        return (
+          '<div class="coffee-row">' +
+          '<span class="area">' + c.area + "</span>" +
+          '<span>' + c.tip + "</span></div>"
+        );
+      }).join("");
+      var disclaimer = tip.disclaimer
+        ? '<p class="coffee-disclaimer">' + tip.disclaimer + "</p>"
+        : "";
+      return (
+        '<div class="hotels-card coffee-card"><h3>' +
+        (tip.title || "☕ 咖啡豆採購總整理") +
+        "</h3>" + disclaimer + rows + "</div>"
+      );
+    }
+
     function renderVideos(item) {
       if (!item.videos || !item.videos.length) return "";
       return item.videos.map(function (video, i) {
@@ -649,7 +691,10 @@
       document.body.setAttribute("data-theme", day.theme || "bloom");
 
       var html = "";
-      if (activeDay === 1) html += renderHotels();
+      if (activeDay === 1) {
+        html += renderHotels();
+        html += renderCoffeeTips();
+      }
 
       html += '<div class="day-header">';
       html += '<div class="label">Day ' + day.day + " · " + formatDateShort(day.date) + "（" + day.weekday + "）</div>";
@@ -672,7 +717,7 @@
 
     async function init() {
       try {
-        var res = await fetch("data/itinerary.json?v=2026-07-07i", { cache: "no-cache" });
+        var res = await fetch("data/itinerary.json?v=2026-07-19a", { cache: "no-cache" });
         if (!res.ok) throw new Error("無法載入行程資料");
         data = await res.json();
 
